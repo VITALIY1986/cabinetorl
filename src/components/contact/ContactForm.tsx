@@ -191,6 +191,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 							</div>
 						</div>
 						<button
+						type="submit"
 							disabled={sendButton}
 							className={`${scss.button} ${sendButton ? scss.loading : null}`}
 						>
