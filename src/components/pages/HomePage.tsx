@@ -4,6 +4,7 @@ import Head from "next/head";
 import { FormattedMessage, useIntl } from "react-intl";
 import Image from "next/image";
 import woman from "@/assets/img/Woman.webp";
+import animate from "@/assets/img/Animate.webp";
 import AnimatedNumbers from "@/components/framer-motion/AnimatedNumbers";
 import { Typewriter } from "react-simple-typewriter";
 import { InstagramIcon, TelegramIcon, WhatAppIcon } from "@/components/svgs";
@@ -22,13 +23,14 @@ const HomePage: FC = () => {
 				<div className={scss.container_home}>
 					<div className={scss.content}>
 						{/* ! left */}
+						{/* 	cursor*/}
+											{/*cursorStyle="|"*/}
 						<div className={scss.left}>
 							<div className={scss.sub__title}>
 								<h1 className={scss.title}>
 									<Typewriter
 										words={[intl.formatMessage({ id: "page.home.title" })]}
 										loop={true}
-										
 									
 										typeSpeed={50}
 										deleteSpeed={10}
@@ -96,6 +98,16 @@ const HomePage: FC = () => {
 									loading="eager"
 									src={woman}
 									alt="Woman"
+								/>
+							</div>
+							<div className={scss.animate_rotate}>
+								<Image
+									priority={true}
+									quality={20}
+									loading="eager"
+									src={animate}
+									alt="Woman"
+									width={550}
 								/>
 							</div>
 						</div>

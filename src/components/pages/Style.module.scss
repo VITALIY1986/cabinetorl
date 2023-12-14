@@ -1,3 +1,7 @@
+
+
+
+
 // ! HomePage
 .home__page {
 	
@@ -233,7 +237,29 @@
 		}
 
 		// ! right
+	
+		.animate_rotate {
+			
+		
+		
+			position: absolute;
+			animation: rotateAnimation 15s infinite linear;
+			@media (max-width: 576px) {
+				top: 10%;
+				right:-21%;
+			}
+		  }
+		  
+		  @keyframes rotateAnimation {
+			from {
+			  transform: rotate(0deg);
+			}
+			to {
+			  transform: rotate(360deg);
+			}
+		  }
 		.right {
+			position: relative;
 			display: flex;
 			justify-content: center;
 			align-items: flex-end;
