@@ -187,15 +187,8 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 								/>
 							</div>
 						</div>
-						<button type="submit"
+						<button type="submit">
 							
-							className={`${scss.button} ${sendButton ? scss.loading : null}`}
-						>
-							{sendButton ? (
-								<FormattedMessage id="page.contact.sending" />
-							) : (
-								<FormattedMessage id="page.contact.send" />
-							)}
 						</button>
 						<ToastContainer />
 					</div>
