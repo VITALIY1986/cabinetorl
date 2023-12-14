@@ -13,7 +13,7 @@
 		flex-wrap: wrap;
 	
 
-		@media (max-width: 1320px) {
+		@media (max-width: 1338px) {
 			justify-content: center;
 		}
 	
@@ -34,18 +34,18 @@
 			align-items: flex-start;
 			width: 100%;
 			max-width: 730px;
-			   @media (max-width: 1320px) {
+			   @media (max-width: 1338px) {
 				display: block;
+				max-width: 100%;
 			   }
 				.sub__title {
 				display: flex;
 				flex-direction: column;
 				align-items: flex-start;
-					@media (max-width: 756px) {
+					@media (max-width: 1338px) {
 						padding: 43px 29px;
 						
-						
-    background: rgb(31 31 31);
+						background: linear-gradient(21deg, #a227a7, #3400a6);
 					}
 				.title {
 					height: 300px;
@@ -95,7 +95,7 @@
 						display: flex;
 						justify-content: center;
 						align-items: center;
-							@media (max-width: 768px) {
+							@media (max-width:1338px) {
 								display: none;
 							}
 						.link {
@@ -156,7 +156,7 @@
 				align-items: center;
 				width: 100%;
 				max-width: 600px;
-				@media (max-width: 756px) {
+				@media (max-width: 1338px) {
 					padding: 0 29px;
 				}
 				h1 {
@@ -166,7 +166,7 @@
 					letter-spacing: 0.035em;
 					text-shadow: 0px 0px 14px rgba(218, 165, 32, 0.5);
 
-					color: #ffe09c;
+					color: #ffa712;
 
 					@media (max-width: 560px) {
 						font-size: 30px;
@@ -175,12 +175,12 @@
 				}
 
 				hr {
-					border: 2px solid #ffe09c;
+					border: 2px solid #ffa712;
 					width: 50px;
 					transform: rotate(90deg);
 
 					@media (max-width: 560px) {
-						border: 1px solid #ffe09c;
+						border: 1px solid #ffa712;
 						width: 30px;
 					}
 				}
@@ -192,7 +192,7 @@
 					letter-spacing: 0.035em;
 					text-shadow: 0px 0px 14px rgba(218, 165, 32, 0.5);
 
-					color: #ffe09c;
+					color: #ffa712;
 
 					@media (max-width: 560px) {
 						font-size: 13px;
@@ -239,18 +239,18 @@
 			width: 100%;
 			max-width: 550px;
 
-			@media (max-width: 1320px) {
+			@media (max-width: 1338px) {
 				display: block;
-			}
-			@media (max-width: 756px) {
 				order:-1;
 				display: block;
-				
 			}
+			
+			
 
 			.woman {
 				position: relative;
-
+				display: flex;
+				justify-content: center;
 				img {
 					position: relative;
 					z-index: 2;
@@ -276,7 +276,12 @@
 		}
 	}
 }
-
+.container_home {
+    padding: 0 29px;
+	@media (max-width: 1338px) {
+		padding: 0;
+	}
+}
 // ! AboutPage
 .about__page {
 	.block__1 {

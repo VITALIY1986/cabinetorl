@@ -5,12 +5,12 @@
 	// ! header
 	--header-scroll-box-shadow: #3f3f3f;
 	--header-scroll: #0c131b00;
-	--header-scroll-active: #1e1e20e5;
+	--header-scroll-active: linear-gradient(21deg, #a227a7, #3400a6);
 	--header-scroll-text-color: #fff;
-	--header-scroll-text-color-active: #ffe6a9;
+	--header-scroll-text-color-active: #ffa712;
 	--header-scroll-text-color-hover: #bdbdbd;
 	--header-text-color: #fff;
-	--header-text-color-active: #ffe6a9;
+	--header-text-color-active: #ffa712;
 	--header-text-color-hover: #bdbdbd;
 	--header-burger-button: #fff;
 	--header-burger-menu: #1e1e20;
@@ -21,14 +21,14 @@
 	--header-dropdown-lang-icon-hover: #bdbdbd;
 	--header-dropdown-lang-bg: #252529;
 	--header-dropdown-lang-button-hover: #c1ad7b;
-	--header-timetable: #ffe6a9;
+	--header-timetable: #ffa712;
 
 	//	! main
 	--home--bg: url("../assets/img/Background_Dark.webp");
 	--home-border-radius-dentist: #ffe6a9;
-	--about-bg: #1e1e1e;
+	--about-bg: #3a1b9a;
 	--about-title-color: #ffffff;
-	--about-text-color: rgba(255, 230, 169, 0.7);
+	--about-text-color: rgba(255, 255, 255, 0.7);
 	--about2-bg: #1e1e1e;
 	--contact-bg: #262626;
 	--contact-text-color: #ffffff;
