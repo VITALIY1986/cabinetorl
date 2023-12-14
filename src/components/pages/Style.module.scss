@@ -49,7 +49,7 @@
 					@media (max-width: 1338px) {
 						padding: 43px 29px;
 						
-						background: linear-gradient(21deg, #a227a7, #3400a6);
+						background: #403357;
 					}
 				.title {
 					position: relative;
@@ -171,7 +171,7 @@
 					letter-spacing: 0.035em;
 					text-shadow: 0px 0px 14px rgba(218, 165, 32, 0.5);
 
-					color: #ffa712;
+					color: #ffd699;
 
 					@media (max-width: 560px) {
 						font-size: 30px;
@@ -180,12 +180,12 @@
 				}
 
 				hr {
-					border: 2px solid #ffa712;
+					border: 2px solid #ffd699;
 					width: 50px;
 					transform: rotate(90deg);
 
 					@media (max-width: 560px) {
-						border: 1px solid #ffa712;
+						border: 1px solid #ffd699;
 						width: 30px;
 					}
 				}
@@ -197,7 +197,7 @@
 					letter-spacing: 0.035em;
 					text-shadow: 0px 0px 14px rgba(218, 165, 32, 0.5);
 
-					color: #ffa712;
+					color: #ffd699;
 
 					@media (max-width: 560px) {
 						font-size: 13px;
@@ -561,7 +561,7 @@
 
 // ! BasicsOrtodont
 .feed__back {
-	background: #3a1b9a;
+	background: #b19cd9;
 }
 
 // ! ContactPage

@@ -64,7 +64,7 @@ const Tabs: FC = () => {
 			<div className={scss.tabs__container}>
 				<div className="container">
 					<div className={scss.content}>
-						<h1 className={scss.about__us}>
+						<h1 className={scss.title}>
 							<FormattedMessage id="page.tabs.title" />
 						</h1>
 						<div className={scss.tabs}>

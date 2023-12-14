@@ -29,7 +29,7 @@ $arrowSizeHover: 30px;
 		.card {
 			padding: 30px;
 			width: 100%;
-			background:linear-gradient(21deg, #a227a7, #3400a6);
+		background: #ffffff;
 			border-radius: 12px;
 
 			cursor: grab;
@@ -52,7 +52,7 @@ $arrowSizeHover: 30px;
 			}
 
 			.card__title {
-				color: #ffffff;
+				color: #414141;
 				margin-bottom: 10px;
 				font-size: 16px;
 				font-weight: 600;
@@ -62,7 +62,7 @@ $arrowSizeHover: 30px;
 			.text {
 				margin-bottom: 16px;
 				font-size: 16px;
-				color: #bdbfc7;
+				color: #3f3f3f;
 			}
 
 			.user__date {
