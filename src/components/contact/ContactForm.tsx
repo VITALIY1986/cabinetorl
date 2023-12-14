@@ -65,32 +65,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 		});
 	};
 
-	async function sendData(e: React.FormEvent<HTMLFormElement>): Promise<void> {
-		e.preventDefault();
-
-		setSendButton(!sendButton);
-
-		try {
-			await axios.post(API_URL, {
-				chat_id: CHAT_ID,
-				parse_mode: "html",
-				text: messageModel()
-			});
-
-			notify();
-			setSendButton(sendButton);
-
-			setFormData({
-				first_name: "",
-				last_name: "",
-				phone: "",
-				subject: "",
-				message: ""
-			});
-		} catch (err) {
-			console.log(err);
-		}
-	}
+	
 
 	const intl: any = useIntl();
 
@@ -187,8 +162,8 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 								/>
 							</div>
 						</div>
-						<button type="submit">
-							
+						<button className={`${scss.button}`}>
+						
 						</button>
 						<ToastContainer />
 					</div>
