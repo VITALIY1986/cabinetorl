@@ -97,109 +97,26 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 	return (
 		<>
 			<div className={className}>
-				<form className={scss.form} onSubmit={sendData}>
-					<div className={scss.container}>
-						<div className={scss.titles}>
-							<h2>
-								<FormattedMessage id="page.contact.left.title" />
-							</h2>
-							<p>
-								<FormattedMessage id="page.contact.left.text" />
-							</p>
-						</div>
-						<div className={scss.inputs}>
-							<div className={scss.inputBx}>
-								<input
-									type="text"
-									name="first_name"
-									aria-labelledby="first_name"
-									id="first_name"
-									className={scss.input__field}
-									value={formData.first_name}
-									onChange={handleChange}
-									required
-								/>
-								<label htmlFor="first_name">
-									<FormattedMessage id="page.contact.input.fitst.name" />
-								</label>
-							</div>
-
-							<div className={scss.inputBx}>
-								<input
-									type="text"
-									name="last_name"
-									aria-labelledby="last_name"
-									id="last_name"
-									className={scss.input__field}
-									value={formData.last_name}
-									onChange={handleChange}
-									required
-								/>
-								<label htmlFor="last_name">
-									<FormattedMessage id="page.contact.input.last.name" />
-								</label>
-							</div>
-
-							<div className={scss.inputBx}>
-								<input
-									type="text"
-									name="phone"
-									aria-label="phone_input"
-									id="phone_input"
-									className={scss.input__field}
-									value={formData.phone || "+996"}
-									maxLength={13}
-									onChange={handleChange}
-									required={!formData.phone || formData.phone.length < 13}
-								/>
-								<label htmlFor="phone">
-									<FormattedMessage id="page.contact.input.phone" />
-								</label>
-							</div>
-
-							<div className={scss.inputBx}>
-								<input
-									type="text"
-									name="subject"
-									aria-labelledby="subject"
-									id="subject"
-									className={scss.input__field}
-									value={formData.subject}
-									onChange={handleChange}
-									required
-								/>
-								<label htmlFor="subject">
-									<FormattedMessage id="page.contact.input.subject" />
-								</label>
-							</div>
-
-							<div className={scss.textareaBx}>
-								<textarea
-									name="message"
-									aria-labelledby="message"
-									id="message"
-									className={`${scss.message} ${font.className}`}
-									placeholder={intl.formatMessage({
-										id: "page.contact.input.message"
-									})}
-									value={formData.message}
-									onChange={handleChange}
-								/>
-							</div>
-						</div>
-						<button
-							disabled={sendButton}
-							className={`${scss.button} ${sendButton ? scss.loading : null}`}
-						>
-							{sendButton ? (
-								<FormattedMessage id="page.contact.sending" />
-							) : (
-								<FormattedMessage id="page.contact.send" />
-							)}
-						</button>
-						<ToastContainer />
-					</div>
-				</form>
+			<form
+    name="contact-form"
+    method="POST"
+    action="contact/?success=true"
+  >
+    <label htmlFor="name">Name *</label>
+    <input
+      id="name"
+      name="name"
+      required
+      type="text"
+    />
+    <label htmlFor="company">Company *</label>
+    <input id="company" name="company" required type="text" />
+    <label htmlFor="email">E-mail Address *</label>
+    <input id="email" type="email" name="email" required />
+    <label htmlFor="message">Message *</label>
+    <textarea id="message" name="message" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
 			</div>
 		</>
 	);
