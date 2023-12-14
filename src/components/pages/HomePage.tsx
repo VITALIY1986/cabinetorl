@@ -28,8 +28,8 @@ const HomePage: FC = () => {
 									<Typewriter
 										words={[intl.formatMessage({ id: "page.home.title" })]}
 										loop={true}
-										cursor
-										cursorStyle="|"
+										
+									
 										typeSpeed={50}
 										deleteSpeed={10}
 										delaySpeed={1500}
