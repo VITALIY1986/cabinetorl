@@ -103,7 +103,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 	return (
 		<>
 			<div className={className}>
-				<form className={scss.form} name="contact"  data-netlify="true" method="POST">
+				<form className={scss.form} onSubmit={onSubmit} name="contact" data-netlify="true" method="POST">
 					<div className={scss.container}>
 						<div className={scss.titles}>
 							<h2>
@@ -205,7 +205,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 									onBlur={onBlur}
 									required
 								/>
-								<label htmlFor="subject" >
+								<label htmlFor="subject">
 									<FormattedMessage id="page.contact.input.subject" />
 								</label>
 								{touched.subject && !values.subject && (
@@ -230,7 +230,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 								/>
 							</div>
 						</div>
-						<button type="submit"
+						<button
 							disabled={isLoading}
 							className={`${scss.button} ${isLoading ? scss.loading : null}`}
 						>
@@ -254,18 +254,6 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 						/>
 					</div>
 				</form>
-
-				<form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Name <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Email <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
 			</div>
 		</>
 	);
