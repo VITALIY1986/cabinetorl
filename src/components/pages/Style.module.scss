@@ -48,6 +48,7 @@
 						background: linear-gradient(21deg, #a227a7, #3400a6);
 					}
 				.title {
+					position: relative;
 					height: 300px;
 					font-weight: 700;
 					font-size: 50px;
@@ -72,7 +73,7 @@
 						font-size: 35px;
 					}
 					@media (max-width: 415px) {
-						font-size: 46px;
+						font-size: 25px;
 						line-height: 50px;
 					}
 					//@media (max-width: 390px) {
