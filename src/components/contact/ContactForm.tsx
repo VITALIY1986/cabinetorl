@@ -32,42 +32,9 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 
 	const [sendButton, setSendButton] = useState(false);
 
-	const TOKEN = "6182732393:AAEaon3732C55YRsWvLNdaEtLRKh4TSGhww";
-	const CHAT_ID = "-1001985016010";
-	const API_URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
-
-	const messageModel = () => {
-		let messageTG = `First Name: <b>${formData.first_name}</b>\n`;
-		messageTG += `Last Name: <b>${formData.last_name}</b>\n`;
-		messageTG += `Phone: <b>${formData.phone}</b>\n`;
-		messageTG += `Subject: <b>${formData.subject}</b>\n`;
-		messageTG += `Message: <b>${formData.message}</b>\n`;
-
-		return messageTG;
-	};
-
-	const handleChange = (
-		e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-	) => {
-		setFormData({ ...formData, [e.target.name]: e.target.value });
-	};
-
-	const notify = () => {
-		toast.success("Ваша форма успешно отправлена!", {
-			position: "top-right",
-			autoClose: 3000,
-			hideProgressBar: false,
-			closeOnClick: true,
-			pauseOnHover: true,
-			draggable: true,
-			progress: undefined,
-			theme: "dark"
-		});
-	};
-
 	
 
-	const intl: any = useIntl();
+	
 
 	return (
 		<>
@@ -87,12 +54,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 								<input
 									type="text"
 									name="first_name"
-									aria-labelledby="first_name"
-									id="first_name"
-									className={scss.input__field}
-									value={formData.first_name}
-									onChange={handleChange}
-									required
+									
 								/>
 								<label htmlFor="first_name">
 									<FormattedMessage id="page.contact.input.fitst.name" />
@@ -103,12 +65,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 								<input
 									type="text"
 									name="last_name"
-									aria-labelledby="last_name"
-									id="last_name"
-									className={scss.input__field}
-									value={formData.last_name}
-									onChange={handleChange}
-									required
+									
 								/>
 								<label htmlFor="last_name">
 									<FormattedMessage id="page.contact.input.last.name" />
@@ -119,13 +76,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 								<input
 									type="text"
 									name="phone"
-									aria-label="phone_input"
-									id="phone_input"
-									className={scss.input__field}
-									value={formData.phone || "+996"}
-									maxLength={13}
-									onChange={handleChange}
-									required={!formData.phone || formData.phone.length < 13}
+									
 								/>
 								<label htmlFor="phone">
 									<FormattedMessage id="page.contact.input.phone" />
@@ -136,12 +87,9 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 								<input
 									type="text"
 									name="subject"
-									aria-labelledby="subject"
-									id="subject"
-									className={scss.input__field}
-									value={formData.subject}
-									onChange={handleChange}
-									required
+									
+								
+									
 								/>
 								<label htmlFor="subject">
 									<FormattedMessage id="page.contact.input.subject" />
@@ -149,23 +97,13 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 							</div>
 
 							<div className={scss.textareaBx}>
-								<textarea
-									name="message"
-									aria-labelledby="message"
-									id="message"
-									className={`${scss.message} ${font.className}`}
-									placeholder={intl.formatMessage({
-										id: "page.contact.input.message"
-									})}
-									value={formData.message}
-									onChange={handleChange}
-								/>
+						
 							</div>
 						</div>
 						<button className={`${scss.button}`}>
 						
 						</button>
-						<ToastContainer />
+					
 					</div>
 				</form>
 			</div>
