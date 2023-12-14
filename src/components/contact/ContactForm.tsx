@@ -33,9 +33,9 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 	const [sendButton, setSendButton] = useState(false);
 
 	const TOKEN = "6842589199:AAHLtWeu3uuWw8cutRqd2T9J0KvWCYN-FWo";
-	const CHAT_ID = "6842589199";
-	const API_URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
-
+	const CHAT_ID = "1414894359";
+	const API_URL = `https://api.telegram.org/bot6842589199:AAHLtWeu3uuWw8cutRqd2T9J0KvWCYN-FWo/sendMessage`;
+	console.log(API_URL)
 	const messageModel = () => {
 		let messageTG = `First Name: <b>${formData.first_name}</b>\n`;
 		messageTG += `Last Name: <b>${formData.last_name}</b>\n`;
@@ -147,7 +147,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 									aria-label="phone_input"
 									id="phone_input"
 									className={scss.input__field}
-									value={formData.phone || "+996"}
+									value={formData.phone || "+40"}
 									maxLength={13}
 									onChange={handleChange}
 									required={!formData.phone || formData.phone.length < 13}
