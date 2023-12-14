@@ -33,7 +33,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 	const [sendButton, setSendButton] = useState(false);
 
 	const TOKEN = "6842589199:AAHLtWeu3uuWw8cutRqd2T9J0KvWCYN-FWo";
-	const CHAT_ID = "-1001985016010";
+	const CHAT_ID = "6842589199";
 	const API_URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
 	const messageModel = () => {
