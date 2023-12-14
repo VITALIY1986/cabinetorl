@@ -1,20 +1,28 @@
 // ! HomePage
 .home__page {
-	background: var(--home--bg) no-repeat center/cover;
-	width: 100%;
-	overflow: hidden;
+	
+    background: var(--home--bg) no-repeat center/cover;
+    width: 100%;
+    overflow: hidden;
+    background-position-x: left;
 
 	.content {
 		display: flex;
+		flex-direction: row;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		height: 100vh;
+	
 
 		@media (max-width: 1320px) {
 			justify-content: center;
 		}
-		@media (max-width: 450px) {
-			height: 90vh;
+	
+		@media (max-width: 756px) {
+			display: flex;
+			flex-direction: column;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	
 		}
 
 		// ! left
@@ -26,12 +34,19 @@
 			align-items: flex-start;
 			width: 100%;
 			max-width: 730px;
-
-			.sub__title {
+			   @media (max-width: 1320px) {
+				display: block;
+			   }
+				.sub__title {
 				display: flex;
 				flex-direction: column;
 				align-items: flex-start;
-
+					@media (max-width: 756px) {
+						padding: 43px 29px;
+						
+						
+    background: rgb(31 31 31);
+					}
 				.title {
 					height: 300px;
 					font-weight: 700;
@@ -80,7 +95,9 @@
 						display: flex;
 						justify-content: center;
 						align-items: center;
-
+							@media (max-width: 768px) {
+								display: none;
+							}
 						.link {
 							//background-color: var(--footer-icon-bg-dark);
 							color: var(--footer-icon-dark);
@@ -131,6 +148,7 @@
 			}
 
 			.stats {
+			
 				bottom: 50px;
 				position: absolute;
 				display: flex;
@@ -138,7 +156,9 @@
 				align-items: center;
 				width: 100%;
 				max-width: 600px;
-
+				@media (max-width: 756px) {
+					padding: 0 29px;
+				}
 				h1 {
 					font-weight: 600;
 					font-size: 50px;
@@ -151,6 +171,7 @@
 					@media (max-width: 560px) {
 						font-size: 30px;
 					}
+					
 				}
 
 				hr {
@@ -219,7 +240,12 @@
 			max-width: 550px;
 
 			@media (max-width: 1320px) {
-				display: none;
+				display: block;
+			}
+			@media (max-width: 756px) {
+				order:-1;
+				display: block;
+				
 			}
 
 			.woman {
@@ -233,7 +259,7 @@
 				}
 
 				&:after {
-					content: "";
+				
 					position: absolute;
 					left: 50%;
 					top: 50%;

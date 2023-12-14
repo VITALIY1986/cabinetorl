@@ -19,7 +19,7 @@ const HomePage: FC = () => {
 				<title>{title}</title>
 			</Head>
 			<div id="/" className={scss.home__page}>
-				<div className="container">
+				<div className="container-home">
 					<div className={scss.content}>
 						{/* ! left */}
 						<div className={scss.left}>
@@ -99,6 +99,13 @@ const HomePage: FC = () => {
 								/>
 							</div>
 						</div>
+
+
+						
+
+
+
+						
 					</div>
 				</div>
 			</div>
