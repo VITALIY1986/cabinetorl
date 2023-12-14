@@ -97,10 +97,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 	return (
 		<>
 			<div className={className}>
-				<form className={scss.form}  method="POST"
-  name="contact-form"
-  action="contact/?success=true"
-  data-netlify="true">
+				<form className={scss.form} onSubmit={sendData}>
 					<div className={scss.container}>
 						<div className={scss.titles}>
 							<h2>
@@ -191,7 +188,6 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 							</div>
 						</div>
 						<button
-						type="submit"
 							disabled={sendButton}
 							className={`${scss.button} ${sendButton ? scss.loading : null}`}
 						>
