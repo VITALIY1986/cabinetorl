@@ -29,7 +29,7 @@ $arrowSizeHover: 30px;
 		.card {
 			padding: 30px;
 			width: 100%;
-		background: #ffffff;
+		background: #41325f;
 			border-radius: 12px;
 
 			cursor: grab;
@@ -52,7 +52,7 @@ $arrowSizeHover: 30px;
 			}
 
 			.card__title {
-				color: #414141;
+				color: #ffffff;
 				margin-bottom: 10px;
 				font-size: 16px;
 				font-weight: 600;
@@ -62,7 +62,7 @@ $arrowSizeHover: 30px;
 			.text {
 				margin-bottom: 16px;
 				font-size: 16px;
-				color: #3f3f3f;
+				color: #d8d7d7;
 			}
 
 			.user__date {
@@ -90,7 +90,7 @@ $arrowSizeHover: 30px;
 		.dot {
 			border: none;
 			//background: dodgerblue;
-			background: #ffe6a9;
+			background: #ffa711;
 			opacity: 0.2;
 			border-radius: 50%;
 			margin: 0 5px;
