@@ -97,7 +97,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 	return (
 		<>
 			<div className={className}>
-				<form className={scss.form} onSubmit={sendData} method="POST"
+				<form className={scss.form}  method="POST"
   name="contact-form"
   action="contact/?success=true"
   data-netlify="true">
