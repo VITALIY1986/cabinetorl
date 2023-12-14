@@ -98,7 +98,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 		<>
 			<div className={className}>
 			<form
-    name="contact-form"
+    name="contact-formss"
     method="POST"
     action="contact/?success=true"
   >
