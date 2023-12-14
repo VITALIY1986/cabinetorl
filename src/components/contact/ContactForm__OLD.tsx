@@ -103,7 +103,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 	return (
 		<>
 			<div className={className}>
-				<form className={scss.form} onSubmit={onSubmit}>
+				<form className={scss.form} onSubmit={onSubmit} name="contact" data-netlify="true" method="POST">
 					<div className={scss.container}>
 						<div className={scss.titles}>
 							<h2>
