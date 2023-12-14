@@ -11,7 +11,9 @@ const Index: FC = () => {
 			<Layout>
 				<HomePage />
 				<AboutPage />
+			
 				<BasicsOrtodont />
+				
 				<ContactPage />
 			</Layout>
 		</>

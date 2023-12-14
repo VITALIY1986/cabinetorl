@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import scss from "./Style.module.scss";
 import { FormattedMessage } from "react-intl";
 import Image from "next/image";
-import TeethIcon from "@/assets/icons/Teeth.png";
+import TeethIcon from "@/assets/icons/Teeth.webp";
 import MedPlus from "@/assets/icons/med_plus.png";
 import CheckMark from "@/assets/icons/check_mark.png";
 import BxChild from "@/assets/icons/bx-child.png";
@@ -54,51 +54,7 @@ const AboutPage: FC = () => {
 					</div>
 				</div>
 
-				<div className={scss.block__2}>
-					<div className="container">
-						<div className={scss.about__ticket}>
-							<div className={scss.card}>
-								<Image
-									priority={true}
-									quality={25}
-									loading="eager"
-									className={scss.icon}
-									src={MedPlus}
-									alt="MedPlus"
-								/>
-								<p className={scss.text}>
-									<FormattedMessage id="page.about.ticket.first" />
-								</p>
-							</div>
-							<div className={scss.card}>
-								<Image
-									priority={true}
-									quality={25}
-									loading="eager"
-									className={scss.icon}
-									src={CheckMark}
-									alt="CheckMark"
-								/>
-								<p className={scss.text}>
-									<FormattedMessage id="page.about.ticket.second" />
-								</p>
-							</div>
-							<div className={scss.card}>
-								<Image
-									priority={true}
-									quality={25}
-									loading="eager"
-									className={scss.icon}
-									src={BxChild}
-									alt="BxChild"
-								/>
-								<p className={scss.text}>
-									<FormattedMessage id="page.about.ticket.third" />
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 		</>
 	);
