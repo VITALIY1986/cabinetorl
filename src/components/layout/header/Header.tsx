@@ -76,6 +76,14 @@ const Header: FC<HeaderProps> = (props) => {
 			duration: durationScroll
 		},
 		{
+			label: <FormattedMessage id="page.header.service" />,
+			to: "service",
+			spy: true,
+			smooth: true,
+			offset: offsetScroll,
+			duration: durationScroll
+		},
+		{
 			label: <FormattedMessage id="page.header.contact" />,
 			to: "contact",
 			spy: true,
@@ -84,7 +92,7 @@ const Header: FC<HeaderProps> = (props) => {
 			duration: durationScroll
 		}
 	];
-
+	
 	const handleScroll = () => {
 		setTimeout(() => {
 			window.scrollBy(0, 1);
@@ -195,12 +203,12 @@ const Header: FC<HeaderProps> = (props) => {
 												<FormattedMessage id="page.header.timetable" />
 											</p>
 										</div>
-										<div className={scss.icon__text}>
-											<a className={scss.tel} href="tel:+996990385056">
+									{/*	<div className={scss.icon__text}>
+											<a className={scss.tel} href="tel:+40724955956">
 												<PhoneIcon />
-												<p className={scss.text}>+996 990 38 50 56</p>
+												<p className={scss.text}>+40724955956</p>
 											</a>
-										</div>
+										</div>*/}
 									</div>
 								</div>
 							</div>
@@ -308,7 +316,7 @@ const Header: FC<HeaderProps> = (props) => {
 									</div>
 									<div className={scss.icon__text}>
 										<PhoneIcon />
-										<p className={scss.text}>+996 990 38 50 56</p>
+										<p className={scss.text}>+40724955956</p>
 									</div>
 								</div>
 							</div>

@@ -27,20 +27,22 @@ const ContactPage: FC = () => {
 									{/*	boss.armsport@gmail.com*/}
 									{/*</p>*/}
 									<p className={scss.text}>
-										<a className={scss.tel} href="tel:+996558777366">
+										<a className={scss.tel} href="tel:+40724955956">
 											<PhoneIcon />
-											+996 990 38 50 56
+											
+													+40724955956
 										</a>
 									</p>
 									<p className={scss.text}>
-										<a className={scss.tel} href="tel:+996555801758">
+										<a className={scss.tel} href="tel:+40724955956">
 											<PhoneIcon />
-											+996 990 38 50 56
+											
+										+40724955956
 										</a>
 									</p>
 									<p className={scss.text}>
 										<MarkerIcon />
-										DevX from Karakol
+										Cabinet ORL
 										{/*DevX&nbsp;*/}
 										{/*<AnimatedNumbers value={911} />*/}
 									</p>
