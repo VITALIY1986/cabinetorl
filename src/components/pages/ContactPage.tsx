@@ -13,9 +13,7 @@ const ContactPage: FC = () => {
 			<div id="contact" className={scss.contact__page}>
 				<div className="container">
 					<div className={scss.content}>
-						<div className={scss.left}>
-							<ContactForm className={scss.form__block} />
-						</div>
+						
 						<div className={scss.right}>
 							<div className={scss.block}>
 								<div className={scss.texts}>

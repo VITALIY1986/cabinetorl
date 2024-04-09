@@ -595,7 +595,7 @@
 
 		.right {
 			width: 100%;
-			max-width: 700px;
+		
 
 			.block {
 				display: flex;
@@ -707,4 +707,33 @@
 			}
 		}
 	}
+}
+
+
+.price {
+	color:white;
+	box-shadow: 0px 0px 48px -19px #382d4f;
+	border-radius: 20px;
+	padding: 30px 10px;
+	background-color: #382d4f;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	p{
+		text-align: center;
+		margin-bottom: 20px;
+		
+	}
+	.price_ron{
+		color:#ffd808;
+		margin-top: 20px;
+		font-size: 30px;
+	}
+	h2{
+		text-align: center;
+		font-size: 16px;
+		font-weight: 600;
+    letter-spacing: 0.04rem;
+    padding-bottom: 0.5rem;
+	
+}
 }

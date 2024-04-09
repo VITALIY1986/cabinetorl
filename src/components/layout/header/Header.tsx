@@ -155,8 +155,8 @@ const Header: FC<HeaderProps> = (props) => {
 								</div>
 
 								<div className={scss.right}>
-									{/* ! switch lang */}
-									<div className={scss.dropdown__language__menu__for__desktop}>
+									
+								{/*	<div className={scss.dropdown__language__menu__for__desktop}>
 										<div className={scss.icon}>
 											<span>
 												<LangIcon
@@ -167,7 +167,7 @@ const Header: FC<HeaderProps> = (props) => {
 												/>
 											</span>
 										</div>
-
+ 
 										<div className={scss.dropdown__content}>
 											{[...locales].map((locale, index) => (
 												<Link
@@ -184,8 +184,7 @@ const Header: FC<HeaderProps> = (props) => {
 												</Link>
 											))}
 										</div>
-									</div>
-
+									</div>! switch lang */}
 									{/* ! switch theme */}
 									{/*<div className={scss.switch__theme}>*/}
 									{/*	<SwitchThemeIcon*/}
@@ -242,7 +241,7 @@ const Header: FC<HeaderProps> = (props) => {
 									</ScrollLink>
 								))}
 
-								{/* ! switch lang */}
+								{/* ! 
 								<div
 									className={
 										props.isOpenDropdownLanguage
@@ -293,7 +292,7 @@ const Header: FC<HeaderProps> = (props) => {
 										))}
 									</div>
 								</div>
-
+switch lang */}
 								{/* ! switch theme */}
 								{/*<div className={scss.burger__menu__switch__theme}>*/}
 								{/*	<SwitchThemeButton className={scss.button__switch__theme}>*/}
