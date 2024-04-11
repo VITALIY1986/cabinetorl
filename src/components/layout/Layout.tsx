@@ -52,12 +52,28 @@ const Layout: FC<LayoutProps> = ({ children, dir }) => {
 				<title>{title}</title>
 				<meta name="description" content={description} />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+				<meta name="robots" content="index, follow"/>
 				<link rel="icon" href="/icon.png" />
-				<meta property="og:title" content="Cabinet ORL Prof. dr. Radulescu Luminita" />
-  <meta property="og:type" content="Cabinet ORL Prof. dr. Radulescu Luminita" />
-  <meta property="og:image" content="https://example.com/image.jpg" />
-  <meta property="og:url" content="https://cabinet-orl-iasi.ro/_ipx/w_3840,q_50/%2F_next%2Fstatic%2Fmedia%2FWoman.70dca9ef.webp?url=%2F_next%2Fstatic%2Fmedia%2FWoman.70dca9ef.webp&w=3840&q=50" />
-  <meta property="og:description" content="Prof. Dr. Rădulescu Luminița Consultația cu investigațiile incluse / Examen clinic cu otoscopie/rinoscopie și bucofaringoscopie /fibroscopie/audiograma tonală/vocală/timpanograma/DPOAE/reflex Stapedian, etc." />
+			
+<meta property="og:type" content="Cabinet ORL Prof. dr. Radulescu Luminita" />
+<meta property="og:url" content="https://www.nhtsa.gov/home" />
+<meta property="og:title" content="Cabinet ORL Prof. dr. Radulescu Luminita" />
+<meta property="og:image" content="https://cabinet-orl-iasi.ro/_ipx/w_3840,q_50/%2F_next%2Fstatic%2Fmedia%2FWoman.70dca9ef.webp?url=%2F_next%2Fstatic%2Fmedia%2FWoman.70dca9ef.webp&w=3840&q=50" />
+<meta property="og:image:type" content="image/png" />
+<meta name="dcterms.title" content="Cabinet ORL Prof. dr. Radulescu Luminita" />
+<meta name="dcterms.type" content="Cabinet ORL Prof. dr. Radulescu Luminita" />
+<meta name="dcterms.format" content="text/html" />
+<meta name="dcterms.identifier" content="https://www.nhtsa.gov/home" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@Cabinet ORL Prof. dr. Radulescu Luminita" />
+
+<meta name="twitter:image" content="https://cabinet-orl-iasi.ro/_ipx/w_3840,q_50/%2F_next%2Fstatic%2Fmedia%2FWoman.70dca9ef.webp?url=%2F_next%2Fstatic%2Fmedia%2FWoman.70dca9ef.webp&w=3840&q=50" />
+<meta name="twitter:image:alt" content="Cabinet ORL Prof. dr. Radulescu Luminita" />
+
+
+
+
+				
 				{/*<link rel="icon" href="/icon.png" hrefLang="x-default" />
 				<link rel="icon" href="/icon.png" hrefLang="ru" />
 				<link rel="icon" href="/icon.png" hrefLang="en" />
