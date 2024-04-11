@@ -24,15 +24,15 @@
 
 		.logo {
 			a {
-				$logo-size: 50px;
-
+				$logo-size: 60px;
+				$logo-size2: 140px;
 				.logo__bg {
-					width: $logo-size;
+					width: $logo-size2;
 					height: $logo-size;
 				}
 
 				.logo__img {
-					width: $logo-size;
+					width: $logo-size2;
 					height: $logo-size;
 				}
 			}
@@ -66,7 +66,8 @@
 		margin-right: 2rem;
 
 		a {
-			$logo-size: 75px;
+			$logo-size: 90px;
+				$logo-size2: 220px;
 
 			position: relative;
 			padding: 15px 0;
@@ -80,10 +81,10 @@
 			.logo__bg {
 				position: absolute;
 
-				background: white;
+				
 				border-radius: 50%;
 
-				width: $logo-size;
+				width: $logo-size2;
 				height: $logo-size;
 
 				transition: 0.4s;
@@ -94,7 +95,7 @@
 
 				border-radius: 50%;
 
-				width: $logo-size;
+				width: $logo-size2;
 				height: $logo-size;
 
 				transition: 0.4s;

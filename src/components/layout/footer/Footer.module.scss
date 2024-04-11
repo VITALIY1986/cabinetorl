@@ -30,15 +30,15 @@
 				align-items: center;
 				border-radius: 50%;
 
-				$logo-size: 50px;
-
+				$logo-size: 70px;
+				$logo-size2: 160px;
 				.bg {
 					position: absolute;
 
-					background: white;
+					
 					border-radius: 50%;
 
-					width: $logo-size;
+					width: $logo-size2;
 					height: $logo-size;
 				}
 
@@ -47,7 +47,7 @@
 
 					border-radius: 50%;
 
-					width: $logo-size;
+					width: $logo-size2;
 					height: $logo-size;
 				}
 
