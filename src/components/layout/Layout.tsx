@@ -50,7 +50,7 @@ const Layout: FC<LayoutProps> = ({ children, dir }) => {
 			<Head>
 				<title>{title}</title>
 				<meta name="description" content={description} />
-				<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 				<link rel="icon" href="/icon.png" />
 				<link rel="icon" href="/icon.png" hrefLang="x-default" />
 				<link rel="icon" href="/icon.png" hrefLang="ru" />
