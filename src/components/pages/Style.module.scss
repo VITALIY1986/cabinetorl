@@ -5,7 +5,7 @@
 // ! HomePage
 .home__page {
 	
-    background: var(--home--bg) no-repeat center/cover;
+    background: #407578;
     width: 100%;
     overflow: hidden;
     background-position-x: left;
@@ -49,7 +49,7 @@
 					@media (max-width: 1338px) {
 						padding: 43px 29px;
 						
-						background-color: var(--footer-bg-dark);
+						    background-color: var(--footer-bg-dark);
 					}
 				.title {
 					position: relative;
@@ -171,7 +171,7 @@
 					letter-spacing: 0.035em;
 					text-shadow: 0px 0px 14px rgba(218, 165, 32, 0.5);
 
-					color: #ffd699;
+					color: var(--header-timetable);
 
 					@media (max-width: 560px) {
 						font-size: 30px;
@@ -180,12 +180,12 @@
 				}
 
 				hr {
-					border: 2px solid #ffd699;
+					border: 2px solid var(--header-timetable);
 					width: 50px;
 					transform: rotate(90deg);
 
 					@media (max-width: 560px) {
-						border: 1px solid #ffd699;
+						border: 1px solid var(--header-timetable);
 						width: 30px;
 					}
 				}
@@ -197,7 +197,7 @@
 					letter-spacing: 0.035em;
 					text-shadow: 0px 0px 14px rgba(218, 165, 32, 0.5);
 
-					color: #ffd699;
+					color: var(--header-timetable);
 
 					@media (max-width: 560px) {
 						font-size: 13px;
@@ -796,7 +796,8 @@ text-align: center;
 			}
 		}
 		.price_ron{
-			color:#ffd808;
+			font-weight: 600;
+			color:#ffae37;
 			margin-top: 20px;
 			font-size: 30px;
 		}
