@@ -133,27 +133,39 @@ color:#ffae37;
 		.button {
 			width: 100%;
 			padding: 19px;
-
+		  
 			border-radius: 50px;
 			border: none;
 			outline: none;
-
+		  
 			font-size: 18px;
 			font-weight: 500;
 			text-transform: uppercase;
 			letter-spacing: 1px;
-
+		  
 			background-color: #ffae37;
 			color: #1e1e1e;
-
+		  
 			cursor: pointer;
-
+		  
 			transition: background-color 0.8s, outline 0.4s, color 0.6s;
-
-			@media (max-width: 500px) {
-				padding: 14px;
-				font-size: 16px;
+		  
+			// Анимация блика
+			background-image: linear-gradient(135deg, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 55%);
+			background-size: 200% 100%;
+			animation: shine 1.6s ease-in-out infinite;
+		  
+		  
+		  
+		  // Описание ключевых кадров для анимации блика
+		  @keyframes shine {
+			from {
+			  background-position: 200% 0;
 			}
+			to {
+			  background-position: -200% 0;
+			}
+		  }
 
 			&:hover {
 				background-color: #ffdd6e;
