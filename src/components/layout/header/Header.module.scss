@@ -561,7 +561,7 @@
 	visibility: visible;
 	transform: none;
 	
-	background: #4b3f61;
+	background: #4f485c;
 }
 @media (max-width: 1050px) {
 	.header {
@@ -574,7 +574,7 @@
 			right: 0;
 			visibility: visible;
 			transform: none;
-			background: #4b3f61;
+			background-color: var(--footer-bg-dark);
 		}
 
 		// ? Sher

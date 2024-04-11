@@ -53,7 +53,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 	};
 
 	const notify = () => {
-		toast.success("Ваша форма успешно отправлена!", {
+		toast.success("Formularul dvs. a fost trimis cu succes!", {
 			position: "top-right",
 			autoClose: 3000,
 			hideProgressBar: false,

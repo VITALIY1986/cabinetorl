@@ -14,10 +14,18 @@ const Service: FC = () => {
 		<>
 			<div id="service" className={scss.about__page}>
 				<div className={scss.block__1}>
+					<div className={scss.title_justify}>
+				<h1 className={scss.title}>
+								<FormattedMessage id="page.about.title" />
+							</h1>
+							</div>
 					<div className="container">
+					
+				
 						<div className={scss.content}>
-
+						
 						<div className={scss.price }>
+							<div className={scss.titles }>
 							<h2 >Prof. Dr. Rădulescu Luminița</h2>
 							<p>Consultația cu investigațiile incluse </p>
 							<ul>
@@ -30,6 +38,7 @@ const Service: FC = () => {
 								<li>reflex Stapedian, etc.</li>
 							</ul>
 							<p className={scss.price_ron}>350 RON</p>
+							</div>
 						</div>
 
 
