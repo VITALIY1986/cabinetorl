@@ -4,7 +4,7 @@ import scss from "./Layout.module.scss";
 import Header from "@/components/layout/header/Header";
 import Footer from "@/components/layout/footer/Footer";
 import { useIntl } from "react-intl";
-
+import logo from "@/assets/ortodont.webp";
 // Inter
 import { Montserrat } from "next/font/google";
 
@@ -44,13 +44,13 @@ const Layout: FC<LayoutProps> = ({ children, dir }) => {
 	const description: any = intl.formatMessage({
 		id: "page.head.meta.description"
 	});
-
+console.log(logo)
 	return (
 		<>
 			<Head>
 			
 				<title>Cabinet ORL Prof. dr. Radulescu Luminita</title>
-				<meta name="description" content="Prof. Dr. Rădulescu Luminița Consultația cu investigațiile incluse / Examen clinic cu otoscopie/rinoscopie și bucofaringoscopie /fibroscopie/audiograma tonală/vocală/timpanograma/DPOAE/reflex Stapedian, etc." />
+				<meta name="description" content="Prof. Dr. Rădulescu Luminița Consultația cu investigațiile incluse / Examen clinic cu otoscopie / rinoscopie și bucofaringoscopie / fibroscopie / audiograma tonală / vocală / timpanograma / DPOAE / reflex Stapedian, etc." />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 				<meta name="robots" content="index, follow"/>
 				<link rel="icon" href="/icon.png" />
@@ -59,7 +59,8 @@ const Layout: FC<LayoutProps> = ({ children, dir }) => {
 <meta property="og:type" content="Cabinet ORL Prof. dr. Radulescu Luminita" />
 <meta property="og:url" content="https://cabinet-orl-iasi.ro/" />
 <meta property="og:title" content="Cabinet ORL Prof. dr. Radulescu Luminita" />
-<meta property="og:image" content="https://cabinet-orl-iasi.ro/_ipx/w_3840,q_50/%2F_next%2Fstatic%2Fmedia%2FWoman.70dca9ef.webp?url=%2F_next%2Fstatic%2Fmedia%2FWoman.70dca9ef.webp&w=3840&q=50" />
+<meta property="og:image" content={`https://cabinet-orl-iasi.ro${logo.src}`} />
+
 <meta property="og:image:type" content="image/png" />
 <meta name="dcterms.title" content="Cabinet ORL Prof. dr. Radulescu Luminita" />
 <meta name="dcterms.type" content="Cabinet ORL Prof. dr. Radulescu Luminita" />
