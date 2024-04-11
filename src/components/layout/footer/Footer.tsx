@@ -74,7 +74,7 @@ const Footer: FC<FooterProps> = (props) => {
 					</div>
 					<hr />
 					<div className={scss.footer__bottom}>
-						<div className={scss.copyright}>© 2019-2023 Cabinet ORL / Toate drepturile rezervate.</div>
+						<div className={scss.copyright}>© 2019-2024 Cabinet ORL / Toate drepturile rezervate.</div>
 						<div className={scss.icons}>
 							<a
 								className={scss.link}
