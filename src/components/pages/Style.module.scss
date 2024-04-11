@@ -185,7 +185,7 @@
 					transform: rotate(90deg);
 
 					@media (max-width: 560px) {
-						border: 1px solid var(--header-timetable);
+						border: 1px solid #ffd699;
 						width: 30px;
 					}
 				}
@@ -436,11 +436,11 @@
 					position: absolute;
 					left: 0;
 					bottom: -10px;
-
+					
 					width: 100%;
 					height: 1px;
 
-					background-color: var(--about-title-color);
+					background-color: var(--contact-text-color);
 				}
 			}
 
