@@ -97,7 +97,7 @@ const HomePage: FC = () => {
 									quality={50}
 									loading="eager"
 									src={woman}
-									alt="Woman"
+									alt="Cabinet ORL"
 								/>
 							</div>
 							<div className={scss.animate_rotate}>
@@ -106,7 +106,7 @@ const HomePage: FC = () => {
 									quality={20}
 									loading="eager"
 									src={animate}
-									alt="Woman"
+									alt="Cabinet ORL"
 									width={550}
 								/>
 							</div>

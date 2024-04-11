@@ -21,7 +21,7 @@ const AboutPage: FC = () => {
 								loading="eager"
 								className={scss.balance__for__mobile}
 								src={TeethIcon}
-								alt={"teeth"}
+								alt={"Cabinet ORL"}
 							/>
 							<div className={scss.icon__first}>
 								<Image
@@ -29,7 +29,7 @@ const AboutPage: FC = () => {
 									quality={25}
 									loading="eager"
 									src={TeethIcon}
-									alt={"teeth"}
+									alt={"Cabinet ORL"}
 								/>
 							</div>
 							<div className={scss.icon__second}>
@@ -38,7 +38,7 @@ const AboutPage: FC = () => {
 									quality={25}
 									loading="eager"
 									src={TeethIcon}
-									alt={"teeth"}
+									alt={"Cabinet ORL"}
 								/>
 							</div>
 							<h1 className={scss.title}>
