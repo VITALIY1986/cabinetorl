@@ -59,25 +59,19 @@ const Header: FC<HeaderProps> = (props) => {
 			offset: offsetScroll,
 			duration: durationScroll
 		},
-		{
-			label: <FormattedMessage id="page.header.about" />,
-			to: "about",
-			spy: true,
-			smooth: true,
-			offset: offsetScroll,
-			duration: durationScroll
-		},
-		{
-			label: <FormattedMessage id="page.header.feedback" />,
-			to: "feedback",
-			spy: true,
-			smooth: true,
-			offset: offsetScroll,
-			duration: durationScroll
-		},
+	
+	
 		{
 			label: <FormattedMessage id="page.header.service" />,
 			to: "service",
+			spy: true,
+			smooth: true,
+			offset: offsetScroll,
+			duration: durationScroll
+		},
+		{
+			label: <FormattedMessage id="page.header.about" />,
+			to: "about",
 			spy: true,
 			smooth: true,
 			offset: offsetScroll,

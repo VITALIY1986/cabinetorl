@@ -561,7 +561,7 @@
 	visibility: visible;
 	transform: none;
 	
-	background: #4f485c;
+	background: var(--footer-bg-dark);
 }
 @media (max-width: 1050px) {
 	.header {

@@ -40,13 +40,13 @@ const Footer: FC<FooterProps> = (props) => {
 							<a className={scss.link__text} href="#">
 								<FormattedMessage id="page.footer.block_2.text_1" />
 							</a>
-							<a className={scss.link__text} href="#">
+							<a className={scss.link__text} href="#service">
 								<FormattedMessage id="page.footer.block_2.text_2" />
 							</a>
-							<a className={scss.link__text} href="#">
+							<a className={scss.link__text} href="#about">
 								<FormattedMessage id="page.footer.block_2.text_3" />
 							</a>
-							<a className={scss.link__text} href="#">
+							<a className={scss.link__text} href="#contact">
 								<FormattedMessage id="page.footer.block_2.text_4" />
 							</a>
 						</div>
@@ -54,12 +54,10 @@ const Footer: FC<FooterProps> = (props) => {
 							<h6>
 								<FormattedMessage id="page.footer.block_3.title" />
 							</h6>
-							<a className={scss.link__text} href="#">
+							<a className={scss.link__text} href="#service">
 								<FormattedMessage id="page.footer.block_3.text_1" />
 							</a>
-							<a className={scss.link__text} href="#">
-								<FormattedMessage id="page.footer.block_3.text_2" />
-							</a>
+						
 						</div>
 						<div className={scss.block}>
 							<h6>
@@ -71,9 +69,7 @@ const Footer: FC<FooterProps> = (props) => {
 							<a className={scss.link__text} href="tel:+40724955956">
 							+40724955956
 							</a>
-							<a className={scss.link__text} href="tel:+40724955956">
-							+40724955956
-							</a>
+						
 						</div>
 					</div>
 					<hr />

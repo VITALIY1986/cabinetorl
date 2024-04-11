@@ -16,7 +16,7 @@ const Service: FC = () => {
 				<div className={scss.block__1}>
 					<div className={scss.title_justify}>
 				<h1 className={scss.title}>
-								<FormattedMessage id="page.about.title" />
+								<FormattedMessage id="page.about.title1" />
 							</h1>
 							</div>
 					<div className="container">

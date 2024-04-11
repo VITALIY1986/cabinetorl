@@ -109,18 +109,19 @@
 			}
 
 			.message {
-				position: relative;
-				height: 100px;
-					width: 100%;
-					background:#367578;
-					border: none;
-					outline: none;
-					padding: 25px 10px 7.5px 10px;
-					border-radius: 4px;
-					border: 1px solid transparent;
-					color: #ffae37;
-					font-weight: 500;
-					font-size: 1em;
+				margin-bottom: 15px;
+				padding: 15px 10px;
+				max-width: 100%;
+				min-height: 150px;
+				min-width: 100%;
+
+				background: #367578;
+				border: none;
+				outline: none;
+				border-radius: 4px;
+				color:#ffae37;
+				font-size: 0.9rem;
+				font-weight: 400;
 
 				&::placeholder {
 					color: #ffdba5;

@@ -8,7 +8,9 @@ import { FormattedMessage, useIntl } from "react-intl";
 import { Montserrat } from "next/font/google";
 
 const font = Montserrat({ subsets: ["latin"] });
-
+const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    // Обработка изменений
+  };
 interface FormData {
 	first_name: string;
 	last_name: string;
@@ -118,7 +120,16 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 									value={formData.first_name}
 									onChange={handleChange}
 									required
-								/>
+									onInvalid={(e: React.InvalidEvent<HTMLInputElement>) => {
+										e.target.setCustomValidity('Vă rugăm, completați acest câmp.');
+									  }}
+									  onInput={(e: React.FormEvent<HTMLInputElement>) => {
+										e.currentTarget.setCustomValidity('');
+									  }}
+									
+									/>
+							
+   
 								<label htmlFor="first_name">
 									<FormattedMessage id="page.contact.input.fitst.name" />
 								</label>
@@ -134,6 +145,12 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 									value={formData.last_name}
 									onChange={handleChange}
 									required
+									onInvalid={(e: React.InvalidEvent<HTMLInputElement>) => {
+										e.target.setCustomValidity('Vă rugăm, completați acest câmp.');
+									  }}
+									  onInput={(e: React.FormEvent<HTMLInputElement>) => {
+										e.currentTarget.setCustomValidity('');
+									  }}
 								/>
 								<label htmlFor="last_name">
 									<FormattedMessage id="page.contact.input.last.name" />
@@ -151,6 +168,12 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 									maxLength={13}
 									onChange={handleChange}
 									required={!formData.phone || formData.phone.length < 13}
+									onInvalid={(e: React.InvalidEvent<HTMLInputElement>) => {
+										e.target.setCustomValidity('Vă rugăm, completați acest câmp.');
+									  }}
+									  onInput={(e: React.FormEvent<HTMLInputElement>) => {
+										e.currentTarget.setCustomValidity('');
+									  }}
 								/>
 								<label htmlFor="phone">
 									<FormattedMessage id="page.contact.input.phone" />
@@ -167,6 +190,12 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 									value={formData.subject}
 									onChange={handleChange}
 									required
+									onInvalid={(e: React.InvalidEvent<HTMLInputElement>) => {
+										e.target.setCustomValidity('Vă rugăm, completați acest câmp.');
+									  }}
+									  onInput={(e: React.FormEvent<HTMLInputElement>) => {
+										e.currentTarget.setCustomValidity('');
+									  }}
 								/>
 								<label htmlFor="subject">
 									<FormattedMessage id="page.contact.input.subject" />

@@ -31,16 +31,10 @@ const ContactPage: FC = () => {
 													+40724955956
 										</a>
 									</p>
-									<p className={scss.text}>
-										<a className={scss.tel} href="tel:+40724955956">
-											<PhoneIcon />
-											
-										+40724955956
-										</a>
-									</p>
+								
 									<p className={scss.text}>
 										<MarkerIcon />
-										Cabinet ORL
+										Cabinet ORL Prof. dr. Radulescu Luminita
 										{/*DevX&nbsp;*/}
 										{/*<AnimatedNumbers value={911} />*/}
 									</p>
