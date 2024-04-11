@@ -44,7 +44,7 @@ const Layout: FC<LayoutProps> = ({ children, dir }) => {
 	const description: any = intl.formatMessage({
 		id: "page.head.meta.description"
 	});
-console.log(logo)
+
 	return (
 		<>
 			<Head>
@@ -69,7 +69,7 @@ console.log(logo)
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@Cabinet ORL Prof. dr. Radulescu Luminita" />
 
-<meta name="twitter:image" content="https://cabinet-orl-iasi.ro/_ipx/w_3840,q_50/%2F_next%2Fstatic%2Fmedia%2FWoman.70dca9ef.webp?url=%2F_next%2Fstatic%2Fmedia%2FWoman.70dca9ef.webp&w=3840&q=50" />
+<meta name="twitter:image" content={`https://cabinet-orl-iasi.ro${logo.src}`} />
 <meta name="twitter:image:alt" content="Cabinet ORL Prof. dr. Radulescu Luminita" />
 
 
