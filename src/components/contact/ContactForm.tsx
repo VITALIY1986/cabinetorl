@@ -12,27 +12,25 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     // Обработка изменений
   };
 interface FormData {
-  first_name: string;
-  last_name: string;
-  phone: string;
-  subject: 'ureche' | 'nas' | 'laringe'; // Обновленный тип для `subject`
-  message: string;
+	first_name: string;
+	last_name: string;
+	phone: string;
+	subject: string;
+	message: string;
 }
 
 interface ContactFormProps {
-  className?: string; // Уточнение типа для `className` как строка
+	className?: any;
 }
 
 const ContactForm: FC<ContactFormProps> = ({ className }) => {
-  const [formData, setFormData] = useState<FormData>({
-    first_name: "",
-    last_name: "",
-    phone: "",
-    subject: "ureche", // Задаем начальное значение для `subject`
-    message: ""
-  });
-
-
+	const [formData, setFormData] = useState<FormData>({
+		first_name: "",
+		last_name: "",
+		phone: "",
+		subject: "",
+		message: ""
+	});
 
 	const [sendButton, setSendButton] = useState(false);
 
@@ -51,7 +49,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 	};
 
 	const handleChange = (
-		e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+		e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
 	) => {
 		setFormData({ ...formData, [e.target.name]: e.target.value });
 	};
@@ -88,7 +86,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 				first_name: "",
 				last_name: "",
 				phone: "",
-				subject: "ureche",
+				subject: "",
 				message: ""
 			});
 		} catch (err) {
@@ -183,30 +181,26 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 							</div>
 
 							<div className={scss.inputBx}>
-  <select
-    name="subject"
-    aria-labelledby="subject"
-    id="subject"
-    className={scss.input__field}
-    value={formData.subject}
-    onChange={handleChange}
-    required
-    onInvalid={(e: React.InvalidEvent<HTMLSelectElement>) => {
-      e.target.setCustomValidity('Vă rugăm, completați acest câmp.');
-    }}
-    onInput={(e: React.FormEvent<HTMLSelectElement>) => {
-      e.currentTarget.setCustomValidity('');
-    }}
-  >
-    <option value="">Selectează o opțiune</option>
-    <option value="ureche">Ureche</option>
-    <option value="nas">Nas</option>
-    <option value="laringe">Laringe</option>
-  </select>
-  <label htmlFor="subject">
-    <FormattedMessage id="page.contact.input.subject" />
-  </label>
-</div>
+								<input
+									type="text"
+									name="subject"
+									aria-labelledby="subject"
+									id="subject"
+									className={scss.input__field}
+									value={formData.subject}
+									onChange={handleChange}
+									required
+									onInvalid={(e: React.InvalidEvent<HTMLInputElement>) => {
+										e.target.setCustomValidity('Vă rugăm, completați acest câmp.');
+									  }}
+									  onInput={(e: React.FormEvent<HTMLInputElement>) => {
+										e.currentTarget.setCustomValidity('');
+									  }}
+								/>
+								<label htmlFor="subject">
+									<FormattedMessage id="page.contact.input.subject" />
+								</label>
+							</div>
 
 							<div className={scss.textareaBx}>
 								<textarea
