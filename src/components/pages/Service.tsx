@@ -29,13 +29,14 @@ const Service: FC = () => {
 							<h2 >Prof. Dr. Rădulescu Luminița</h2>
 							<p>Consultația cu investigațiile incluse </p>
 							<ul>
+							     <li>Otomicroscopie </li>
 								<li>Examen clinic cu otoscopie </li>
 								<li>rinoscopie și bucofaringoscopie</li>
 								<li>fibroscopie</li>
-								<li>audiograma tonală/vocală</li>
+								
 								<li>timpanograma</li>
 								<li>DPOAE</li>
-								<li>reflex Stapedian, etc.</li>
+								
 							</ul>
 							<p className={scss.price_ron}>350 RON</p>
 							</div>

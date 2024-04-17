@@ -42,7 +42,7 @@
 	"page.contact.input.last.name": "Prenume*",
 	"page.contact.input.phone": "Numarul*",
 	"page.contact.input.subject": "Subiectul intrebarii*",
-	"page.contact.input.message": "Descrieti problema dvs. in forma gratuita*",
+	"page.contact.input.message": "Descrieti pe scurt problema*",
 	"page.contact.sending": "Sending...",
 	"page.contact.send": "Trimiteti",
 	"page.contact.required.field": "required field",
