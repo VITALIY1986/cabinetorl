@@ -5,13 +5,11 @@ import Header from "@/components/layout/header/Header";
 import Footer from "@/components/layout/footer/Footer";
 import { useIntl } from "react-intl";
 import logo from "@/assets/ortodont.webp";
-import Phone from "./phone.png";
-import Image from 'next/image';
+// Inter
 import { Montserrat } from "next/font/google";
 
 const font = Montserrat({ subsets: ["latin"] });
-console.log(Phone )
-const phoneNumber = '+40724955956';
+
 interface LayoutProps {
 	children: ReactNode;
 	dir?: any;
@@ -94,14 +92,7 @@ const Layout: FC<LayoutProps> = ({ children, dir }) => {
 					</footer>
 				</div>
 			</div>
-			<a href={`tel:${phoneNumber}`} className={scss.mobil_call_but}>
-			<Image
-			src={Phone }
-			alt="Описание изображения"
-			width={90}  // желаемая ширина изображения
-			height={90} // желаемая высота изображения
-			/>
-</a>
+	
 		</>
 	);
 };
