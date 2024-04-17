@@ -9,3 +9,23 @@
 		margin-top: auto;
 	}
 }
+.mobil_call_but {
+    display: block;
+    position: fixed;
+    bottom: 7%;
+    right: 5%;
+    z-index: 999;
+    width: 90px;
+    height: 90px;
+    animation: radial-pulse 1s infinite;
+    border-radius: 50%;
+}
+/*создаем анимацию пульсации*/
+@keyframes radial-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 201, 107, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 40px rgba(207, 241, 207, 0);
+  }
+}
