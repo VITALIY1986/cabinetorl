@@ -38,7 +38,7 @@ const Service: FC = () => {
 								<li>DPOAE</li>
 								
 							</ul>
-							<p className={scss.price_ron}>350 RON</p>
+							
 							</div>
 						</div>
 
