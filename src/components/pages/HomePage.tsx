@@ -97,7 +97,7 @@ const HomePage: FC = () => {
 									quality={50}
 									loading="eager"
 									src={woman}
-									alt="Cabinet ORL"
+									alt="Profesor Doctor ORL Iasi: Radulescu Luminita 🏆"
 								/>
 							</div>
 							<div className={scss.animate_rotate}>
