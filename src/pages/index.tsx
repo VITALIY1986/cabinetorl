@@ -9,69 +9,58 @@ import { GetStaticProps } from 'next';
 
 interface Post {
 	videoId: string;
-  slug: string;
-  title: string;
-  coverImage: {
-    url: string; // Убедитесь, что это объект с полем url
-  };
-  tags: { [key: string]: string }; // Обновляем поле для тегов как объект
+	slug: string;
+	title: string;
+	coverImage: {
+		url: string; // Ensure this is an object with a url field
+	};
+	tags: { [key: string]: string }; // Update tags field as an object
 }
 
 interface Props {
-  posts: Post[];
+	posts: Post[];
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  const posts = await getAllPosts(true);
-  
-  return {
-    props: {
-      posts,
-    },
-  };
+	const posts = await getAllPosts(true);
+	
+	return {
+		props: {
+			posts,
+		},
+	};
 };
 
-// Функция для фильтрации постов по тегу
+// Function to filter posts by tag
 const filterPostsByTag = (posts: Post[], tagName: string): Post[] => {
-  return posts.filter((post) => {
-    const tagsArray = Object.values(post.tags || {}); // Преобразуем объект в массив
-    return tagsArray.some(tag => tag === tagName); // Проверяем наличие тега
-  });
+	return posts.filter((post) => {
+		const tagsArray = Object.values(post.tags || {}); // Convert object to array
+		return tagsArray.some(tag => tag === tagName); // Check for tag presence
+	});
 };
 
 const Index: FC<Props> = ({ posts }) => {
-  const heroPost = posts[0];
+	const heroPost = posts[0];
 
-  // Пример фильтрации постов по тегу "homepage"
-  const filteredPosts = filterPostsByTag(posts, "homepage");
+	// Example of filtering posts by the "homepage" tag
+	const filteredPosts = filterPostsByTag(posts, "homepage");
 
-  return (
-    <>
-      <Layout>
-	  {filteredPosts.length > 0 ? (
-          filteredPosts.map((post: Post) => (
-
-			<>
-          <HomePage url={post.coverImage.url} />
-		
-		  
-		  <Service />
-		  
-        <AboutPage />
-        <ContactPage />
-		  
-		  </>
-		))
-	) : (
-	  <p>No posts found with the specified tag.</p>
-	)}
-
-      
-
-     
-      </Layout>
-    </>
-  );
+	return (
+		<Layout>
+			{filteredPosts.length > 0 ? (
+				filteredPosts.map((post: Post) => (
+					<React.Fragment key={post.slug}>
+						<HomePage url={post.coverImage.url} />
+						<Service />
+						<AboutPage videoId={post.videoId} />
+						<ContactPage />
+					</React.Fragment>
+				))
+			) : (
+				<p>No posts found with the specified tag.</p>
+			)}
+		</Layout>
+	);
 };
 
 export default Index;
