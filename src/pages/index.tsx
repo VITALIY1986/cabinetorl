@@ -56,8 +56,14 @@ const Index: FC<Props> = ({ posts }) => {
 		
 		  
 		  <Service />
-        <AboutPage videoId={post.videoId} />
-        <ContactPage />
+		  <iframe
+        src={`https://www.youtube.com/embed/${post.videoId}`}
+        width="560"
+        height="315"
+        frameBorder="0"
+        allowFullScreen
+      />
+       
 		  
 		  </>
 		))
