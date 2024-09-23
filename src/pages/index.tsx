@@ -33,11 +33,7 @@ const Index: FC<Props> = ({ posts }) => {
     <>
       <Layout>
         <HomePage />
-        {posts.map((post: Post) => ( // Явно указываем тип post
-          <div key={post.slug}>
-            <h2>{post.title}</h2>
-          </div>
-        ))}
+       
         <Service />
         {/* <BasicsOrtodont /> */}
         <AboutPage />
