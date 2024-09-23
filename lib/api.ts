@@ -5,6 +5,8 @@ const POST_GRAPHQL_FIELDS = `
   slug
   title
   videoId
+  youtubedescription
+
   coverImage {
     url
   }

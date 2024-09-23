@@ -7,9 +7,10 @@ import ReactYoutube from "@/components/react-youtube/ReactYoutube";
 
 interface AboutPageProps {
 	videoId: string;
+	youtubedescription: string;
 }
 
-const AboutPage: FC<AboutPageProps> = ({ videoId }) => {
+const AboutPage: FC<AboutPageProps> = ({ videoId,youtubedescription }) => {
 	return (
 		<div id="about" className={scss.about__page}>
 			<div className={scss.block__1}>
@@ -29,7 +30,7 @@ const AboutPage: FC<AboutPageProps> = ({ videoId }) => {
 						<div className={scss.video__text}>
 							<ReactYoutube videoId={videoId} className={scss.youtube} />
 							<p className={scss.text}>
-								<FormattedMessage id="page.about.about.me" />
+								{youtubedescription}
 							</p>
 						</div>
 					</div>

@@ -11,6 +11,8 @@ interface Post {
 	videoId: string;
 	slug: string;
 	title: string;
+	youtubedescription: string;
+
 	coverImage: {
 		url: string; // Ensure this is an object with a url field
 	};
@@ -52,7 +54,7 @@ const Index: FC<Props> = ({ posts }) => {
 					<React.Fragment key={post.slug}>
 						<HomePage url={post.coverImage.url} />
 						<Service />
-						<AboutPage videoId={post.videoId} />
+						<AboutPage videoId={post.videoId} youtubedescription={post.youtubedescription}/>
 						<ContactPage />
 					</React.Fragment>
 				))
