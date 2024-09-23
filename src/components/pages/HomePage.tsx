@@ -89,8 +89,17 @@ const HomePage: FC<HomePageProps> = ({ url }) => {
             {/* ! right */}
             <div className={scss.right}>
               <div className={scss.woman}>
-                <CoverImage {...coverImageProps} /> {/* Передаем пропсы */}
-               
+                
+				<Image
+				width={900}
+				height={900}
+              priority={true}
+              quality={1}
+              loading="eager"
+              className={scss.balance__for__mobile}
+              src={url}
+              alt={"Cabinet ORL"}
+            />
               </div>
             </div>
           </div>

@@ -16,7 +16,7 @@ const SwitchLogo: FC<SwitchLogoProps> = ({ className }) => {
 
 	return (
 		<>
-			<Image className={className} src={logo} alt="logo" />
+			 {/*<Image className={className} src={logo} alt="logo" />*/}
 		</>
 	);
 };
