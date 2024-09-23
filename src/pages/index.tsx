@@ -57,7 +57,7 @@ const Index: FC<Props> = ({ posts }) => {
 		  
 		  <Service />
 		  
-        <AboutPage videoId={post.videoId} />
+       
         <ContactPage />
 		  
 		  </>
