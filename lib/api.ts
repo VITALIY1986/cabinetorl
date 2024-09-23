@@ -1,4 +1,10 @@
 const POST_GRAPHQL_FIELDS = `
+leftimg{
+    url
+  }
+rightimg{
+    url
+  }
  tags { 
         homepage
       }

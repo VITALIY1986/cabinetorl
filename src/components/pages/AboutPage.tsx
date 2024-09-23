@@ -6,11 +6,12 @@ import TeethIcon from "@/assets/icons/Teeth.webp";
 import ReactYoutube from "@/components/react-youtube/ReactYoutube";
 
 interface AboutPageProps {
+	rightimg: string;
   videoId: string;
   youtubedescription: string;
 }
 
-const AboutPage: FC<AboutPageProps> = ({ videoId,youtubedescription }) => {
+const AboutPage: FC<AboutPageProps> = ({ videoId,youtubedescription,rightimg }) => {
   return (
     <>
       <div id="about" className={scss.about__page}>
@@ -28,20 +29,26 @@ const AboutPage: FC<AboutPageProps> = ({ videoId,youtubedescription }) => {
               />
               {/* Иконки */}
               <div className={scss.icon__first}>
-                <Image
+              <Image
                   priority={true}
                   quality={25}
+				  width={400}
+				  height={720}
+				  sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
                   loading="eager"
-                  src={TeethIcon}
-                  alt={"Cabinet ORL Icon 1"}
+                  src={rightimg}
+                  alt={"Cabinet ORL Icon 2"}
                 />
               </div>
               <div className={scss.icon__second}>
                 <Image
                   priority={true}
                   quality={25}
+				  width={400}
+				  height={720}
+				  sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
                   loading="eager"
-                  src={TeethIcon}
+                  src={rightimg}
                   alt={"Cabinet ORL Icon 2"}
                 />
               </div>

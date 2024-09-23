@@ -11,6 +11,11 @@ const Service = dynamic(() => import('@/components/pages/Service'), { ssr: false
 const ContactPage = dynamic(() => import('@/components/pages/ContactPage'));
 
 interface Post {
+	
+	rightimg: {
+
+		url: string;
+	};
   videoId: string;
   slug: string;
   title: string;
@@ -55,7 +60,7 @@ const Index: FC<Props> = ({ posts }) => {
           <React.Fragment key={post.slug}>
             <HomePage url={post.coverImage.url} />
             <Service />
-            <AboutPage videoId={post.videoId} youtubedescription={post.youtubedescription} />
+            <AboutPage videoId={post.videoId} youtubedescription={post.youtubedescription} rightimg={post.rightimg.url}/>
             <ContactPage />
           </React.Fragment>
         ))
