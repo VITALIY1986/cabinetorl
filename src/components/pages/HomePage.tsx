@@ -100,7 +100,7 @@ const HomePage: FC = () => {
 									alt="Profesor Doctor ORL Iasi: Radulescu Luminita 🏆"
 								/>
 							</div>
-							<div className={scss.animate_rotate}>
+							{/*<div className={scss.animate_rotate}>
 								<Image
 									priority={true}
 									quality={20}
@@ -109,7 +109,7 @@ const HomePage: FC = () => {
 									alt="Cabinet ORL"
 									width={550}
 								/>
-							</div>
+							</div>*/}
 						</div>
 
 
