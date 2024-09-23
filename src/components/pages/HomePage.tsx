@@ -66,18 +66,14 @@ const HomePage: FC<HomePageProps> = ({ url }) => {
 
               <div className={scss.stats}>
                 <div className={scss.customers}>
-                  <h1>
-                    <AnimatedNumbers value={1687} />+
-                  </h1>
+                  
                   <hr />
                   <p>
                     <FormattedMessage id="page.home.stat.first" />
                   </p>
                 </div>
                 <div className={scss.years}>
-                  <h1>
-                    <AnimatedNumbers value={20} />+
-                  </h1>
+                 
                   <hr />
                   <p>
                     <FormattedMessage id="page.home.stat.second" />
