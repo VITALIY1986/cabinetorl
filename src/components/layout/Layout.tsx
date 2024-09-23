@@ -5,7 +5,7 @@ import Header from "@/components/layout/header/Header";
 import Footer from "@/components/layout/footer/Footer";
 import { useIntl } from "react-intl";
 import logo from "@/assets/ortodont.webp";
-import woman from "@/assets/img/Woman.webp";
+import woman from "@/assets/img/Prof-Dr-LuminitaRadulescu.png";
 // Inter
 import { Montserrat } from "next/font/google";
 
