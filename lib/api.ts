@@ -4,6 +4,7 @@ const POST_GRAPHQL_FIELDS = `
       }
   slug
   title
+  videoId
   coverImage {
     url
   }

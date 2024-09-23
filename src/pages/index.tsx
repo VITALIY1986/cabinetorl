@@ -8,6 +8,7 @@ import { getAllPosts } from "../../lib/api";
 import { GetStaticProps } from 'next';
 
 interface Post {
+	videoId: string;
   slug: string;
   title: string;
   coverImage: {
@@ -49,8 +50,16 @@ const Index: FC<Props> = ({ posts }) => {
       <Layout>
 	  {filteredPosts.length > 0 ? (
           filteredPosts.map((post: Post) => (
+
+			<>
           <HomePage url={post.coverImage.url} />
-       
+		
+		  
+		  <Service />
+        <AboutPage videoId={post.videoId} />
+        <ContactPage />
+		  
+		  </>
 		))
 	) : (
 	  <p>No posts found with the specified tag.</p>
@@ -58,9 +67,7 @@ const Index: FC<Props> = ({ posts }) => {
 
       
 
-        <Service />
-        <AboutPage />
-        <ContactPage />
+     
       </Layout>
     </>
   );
