@@ -52,12 +52,12 @@ const Index: FC<Props> = ({ posts }) => {
           filteredPosts.map((post: Post) => (
 
 			<>
-          <HomePage url={post.coverImage.url} />
+         
 		
 		  
 		  <Service />
 		  
-       
+      
 		  
 		  </>
 		))
