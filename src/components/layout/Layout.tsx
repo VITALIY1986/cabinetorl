@@ -60,7 +60,7 @@ const Layout: FC<LayoutProps> = ({ children, dir }) => {
 <meta property="og:type" content="Profesor Doctor ORL Iasi: Radulescu Luminita 🏆" />
 <meta property="og:url" content="https://cabinet-orl-iasi.ro/" />
 <meta property="og:title" content="Profesor Doctor ORL Iasi: Radulescu Luminita 🏆" />
-<meta property="og:image" content={`https://cabinet-orl-iasi.ro${woman}`} />
+<meta property="og:image" content={`https://cabinet-orl-iasi.ro${woman.src}`} />
 <meta name="google-site-verification" content="b5rsNgu8NoLvPn8hLeR5pwrIT3mJfHbpi-yphT49cOc" />
 <meta property="og:image:type" content="image/webp" />
 <meta name="dcterms.title" content="Profesor Doctor ORL Iasi: Radulescu Luminita 🏆" />
