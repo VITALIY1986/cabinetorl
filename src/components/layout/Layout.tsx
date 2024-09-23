@@ -50,28 +50,29 @@ const Layout: FC<LayoutProps> = ({ children, dir }) => {
 		<>
 			<Head>
 			
-				<title>Profesor Doctor (ORL) Iasi: Radulescu Luminita </title>
-				<meta name="description" content=" Cautați un specialist ORL de inalta calificare in Iasi? Profesor Doctor ORL Radulescu Luminita ofera cele mai bune servicii ORL, inclusiv cabinete si urgente ORL în Iasi." />
+				<title>ORL Iasi: Otorinolaringolog, Profesor Doctor Radulescu Luminita</title>
+				<meta name="description" content="ORL Iasi - Profesor Doctor Radulescu Luminita ofera servicii complete ORL, de la diagnostic la tratament, inclusiv consultatii si urgente ORL in Iasi." />
+
 				<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 				<meta name="robots" content="index, follow"/>
 				<link rel="icon" href="/icon.png" />
 				<link rel="canonical" href="https://cabinet-orl-iasi.ro/" />
 <link rel="shortlink" href="https://cabinet-orl-iasi.ro/" />
-<meta property="og:type" content="Profesor Doctor ORL Iasi: Radulescu Luminita 🏆" />
+<meta property="og:type" content="ORL Iasi: Otorinolaringolog, Profesor Doctor Radulescu Luminita" />
 <meta property="og:url" content="https://cabinet-orl-iasi.ro/" />
-<meta property="og:title" content="Profesor Doctor ORL Iasi: Radulescu Luminita 🏆" />
+<meta property="og:title" content="ORL Iasi: Otorinolaringolog, Profesor Doctor Radulescu Luminita" />
 <meta property="og:image" content={`https://cabinet-orl-iasi.ro${woman.src}`} />
 <meta name="google-site-verification" content="b5rsNgu8NoLvPn8hLeR5pwrIT3mJfHbpi-yphT49cOc" />
 <meta property="og:image:type" content="image/webp" />
-<meta name="dcterms.title" content="Profesor Doctor ORL Iasi: Radulescu Luminita 🏆" />
-<meta name="dcterms.type" content="Profesor Doctor ORL Iasi: Radulescu Luminita 🏆" />
+<meta name="dcterms.title" content="ORL Iasi: Otorinolaringolog, Profesor Doctor Radulescu Luminita" />
+<meta name="dcterms.type" content="ORL Iasi: Otorinolaringolog, Profesor Doctor Radulescu Luminita" />
 <meta name="dcterms.format" content="text/html" />
 <meta name="dcterms.identifier" content="https://cabinet-orl-iasi.ro/" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="Profesor Doctor ORL Iasi: Radulescu Luminita 🏆" />
+<meta name="twitter:site" content="ORL Iasi: Otorinolaringolog, Profesor Doctor Radulescu Luminita" />
 
 <meta name="twitter:image" content={`https://cabinet-orl-iasi.ro${logo.src}`} />
-<meta name="twitter:image:alt" content="Profesor Doctor ORL Iasi: Radulescu Luminita 🏆" />
+<meta name="twitter:image:alt" content="ORL Iasi: Otorinolaringolog, Profesor Doctor Radulescu Luminita" />
 
 
 

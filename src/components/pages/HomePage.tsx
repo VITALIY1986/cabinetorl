@@ -9,16 +9,18 @@ import { Typewriter } from "react-simple-typewriter";
 import CoverImage from "./cover-image"; // Убедитесь, что путь правильный
 
 interface CoverImageProps {
+	
   title: string;
   url: string;
   slug?: string; // Опциональный пропс
 }
 
 interface HomePageProps {
+	text: string;
   url: string; // Определяем ожидаемый пропс
 }
 
-const HomePage: FC<HomePageProps> = ({ url }) => {
+const HomePage: FC<HomePageProps> = ({ url,text }) => {
   const intl = useIntl();
   const title = intl.formatMessage({ id: "page.head.home.title" });
 
@@ -38,16 +40,11 @@ const HomePage: FC<HomePageProps> = ({ url }) => {
             {/* ! left */}
             <div className={scss.left}>
               <div className={scss.sub__title}>
+				
                 <h1 className={scss.title}>
-                  <Typewriter
-                    words={[intl.formatMessage({ id: "page.home.title" })]}
-                    loop={true}
-                    typeSpeed={50}
-                    deleteSpeed={10}
-                    delaySpeed={1500}
-                  />
+				{text}
                 </h1>
-                <div className={scss.button__call}>
+              {/*   <div className={scss.button__call}>
                   <div className={scss.icons}>
                     <a className={`${scss.link} ${scss.instagram}`} href="#" target="_blank" aria-label="Link to Instagram profile">
                       <InstagramIcon />
@@ -59,7 +56,7 @@ const HomePage: FC<HomePageProps> = ({ url }) => {
                       <TelegramIcon />
                     </a>
                   </div>
-                </div>
+                </div>*/}
               </div>
 
               <div className={scss.stats}>

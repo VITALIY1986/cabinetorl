@@ -16,6 +16,7 @@ interface Post {
 
 		url: string;
 	};
+	h1: string;
   videoId: string;
   slug: string;
   title: string;
@@ -58,7 +59,7 @@ const Index: FC<Props> = ({ posts }) => {
       {filteredPosts.length > 0 ? (
         filteredPosts.map((post: Post) => (
           <React.Fragment key={post.slug}>
-            <HomePage url={post.coverImage.url} />
+            <HomePage url={post.coverImage.url} text={post.h1}/>
             <Service />
             <AboutPage videoId={post.videoId} youtubedescription={post.youtubedescription} rightimg={post.rightimg.url}/>
             <ContactPage />
