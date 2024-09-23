@@ -31,9 +31,7 @@ const HomePage: FC<HomePageProps> = ({ url }) => {
 
   return (
     <>
-      <Head>
-        <title>{title}</title>
-      </Head>
+      
       <div id="/" className={scss.home__page}>
         <div className={scss.container_home}>
           <div className={scss.content}>

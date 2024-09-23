@@ -50,7 +50,7 @@ const Layout: FC<LayoutProps> = ({ children, dir }) => {
 		<>
 			<Head>
 			
-				<title>Profesor Doctor ORL Iasi: Radulescu Luminita 🏆</title>
+				<title>Profesor Doctor (ORL) Iasi: Radulescu Luminita </title>
 				<meta name="description" content=" Cautați un specialist ORL de inalta calificare in Iasi? Profesor Doctor ORL Radulescu Luminita ofera cele mai bune servicii ORL, inclusiv cabinete si urgente ORL în Iasi." />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 				<meta name="robots" content="index, follow"/>
