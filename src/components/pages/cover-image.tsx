@@ -17,13 +17,14 @@ export default function CoverImage({
   const image = (
     <ContentfulImage
       alt={`Cover Image for ${title}`}
-      priority
+      
       width={2000}
       height={1000}
       className={cn("shadow-small", {
         "hover:shadow-medium transition-shadow duration-200": slug,
       })}
       src={url}
+      loading="lazy"
     />
   );
 
