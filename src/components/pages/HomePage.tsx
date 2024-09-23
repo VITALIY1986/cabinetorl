@@ -91,11 +91,13 @@ const HomePage: FC<HomePageProps> = ({ url }) => {
               <div className={scss.woman}>
                 
 				<Image
-				width={900}
-				height={900}
+				
               priority={true}
-              quality={1}
-              loading="eager"
+			  width={900}
+			  height={900}
+			  sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+			  
+			  loading="eager"
               className={scss.balance__for__mobile}
               src={url}
               alt={"Cabinet ORL"}
