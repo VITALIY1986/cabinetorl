@@ -55,7 +55,7 @@ const Index: FC<Props> = ({ posts }) => {
           <React.Fragment key={post.slug}>
             <HomePage url={post.coverImage.url} />
             <Service />
-        
+            <AboutPage videoId={post.videoId} youtubedescription={post.youtubedescription} />
             <ContactPage />
           </React.Fragment>
         ))
