@@ -2,7 +2,16 @@
 const nextConfig = {
 	
 	reactStrictMode: true,
-
+	images: {
+		remotePatterns: [
+		  {
+			protocol: 'https',
+			hostname: 'images.ctfassets.net',
+			port: '', // оставьте пустым, если не требуется
+			pathname: '/**', // разрешаем все пути
+		  },
+		],
+	  },
 	i18n: {
 		locales: ["en", "ro", "kg"],
 		defaultLocale: "ro",

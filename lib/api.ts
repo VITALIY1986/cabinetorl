@@ -1,4 +1,7 @@
 const POST_GRAPHQL_FIELDS = `
+ tags { 
+        homepage
+      }
   slug
   title
   coverImage {
