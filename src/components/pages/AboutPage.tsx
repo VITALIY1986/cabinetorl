@@ -45,7 +45,7 @@ const AboutPage: FC = () => {
 								<FormattedMessage id="page.about.title" />
 							</h1>
 							<div className={scss.video__text}>
-								<ReactYoutube className={scss.youtube} />
+							{/* 	<ReactYoutube className={scss.youtube} /> */}
 								<p className={scss.text}>
 									<FormattedMessage id="page.about.about.me" />
 								</p>
