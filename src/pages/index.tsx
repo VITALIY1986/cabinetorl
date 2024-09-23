@@ -55,9 +55,10 @@ const Index: FC<Props> = ({ posts }) => {
           <HomePage url={post.coverImage.url} />
 		
 		  
-		
+		  <Service />
 		  
-      
+        <AboutPage videoId={post.videoId} />
+        <ContactPage />
 		  
 		  </>
 		))
