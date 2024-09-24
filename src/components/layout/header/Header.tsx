@@ -16,6 +16,7 @@ import { IsOpenProps } from "@/components/layout/Layout";
 interface HeaderProps extends IsOpenProps {}
 
 interface linksProps {
+	
 	to: string;
 	label: any;
 	spy: boolean;
@@ -23,8 +24,13 @@ interface linksProps {
 	offset: number;
 	duration: number;
 }
+interface HeaderProps {
+	
+	logo: string;
+	
+}
 
-const Header: FC<HeaderProps> = (props) => {
+const Header: FC<HeaderProps> = ({ logo, ...props }) => {
 	const [headerScroll, setHeaderScroll] = useState<boolean>(false);
 	const { locales, locale: activeLocale, pathname }: any = useRouter();
 
@@ -121,10 +127,11 @@ const Header: FC<HeaderProps> = (props) => {
 									}}
 								>
 									<div className={scss.logo__bg}>
-										<SwitchLogo className={scss.logo__img} />
+										<SwitchLogo className={scss.logo__img} logo={logo} />
 									</div>
 								</ScrollLink>
 							</div>
+						
 							<div className={scss.nav__menu}>
 								<div className={scss.left}>
 									<div className={scss.links}>

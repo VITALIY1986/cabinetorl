@@ -11,7 +11,12 @@ const Service = dynamic(() => import('@/components/pages/Service'), { ssr: false
 const ContactPage = dynamic(() => import('@/components/pages/ContactPage'));
 
 interface Post {
-	
+	metadescription: string;
+	metatitle: string;
+	logo: {
+
+		url: string;
+	};
 	rightimg: {
 
 		url: string;
@@ -55,20 +60,23 @@ const Index: FC<Props> = ({ posts }) => {
   const filteredPosts = filterPostsByTag(posts, "homepage");
 
   return (
-    <Layout>
+    <>
       {filteredPosts.length > 0 ? (
         filteredPosts.map((post: Post) => (
+			<Layout metatitle={post.metatitle} metadescription={post.metadescription} logo={post.logo.url}>
           <React.Fragment key={post.slug}>
             <HomePage url={post.coverImage.url} text={post.h1}/>
             <Service />
+			
             <AboutPage videoId={post.videoId} youtubedescription={post.youtubedescription} rightimg={post.rightimg.url}/>
             <ContactPage />
           </React.Fragment>
+		  </Layout>
         ))
       ) : (
         <p>No posts found with the specified tag.</p>
       )}
-    </Layout>
+    </>
   );
 };
 

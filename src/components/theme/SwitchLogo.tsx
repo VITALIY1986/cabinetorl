@@ -6,17 +6,24 @@ import logoOrtodont from "@/assets/ortodont-logo.webp";
 import { useTheme } from "next-themes";
 
 interface SwitchLogoProps {
+	logo: string;
 	className?: any;
 }
 
-const SwitchLogo: FC<SwitchLogoProps> = ({ className }) => {
-	const { resolvedTheme }: any = useTheme();
+const SwitchLogo: FC<SwitchLogoProps> = ({ className , logo}) => {
+	
 	// const logo: any = resolvedTheme === "light" ? logoDark : logoLight;
-	const logo: any = resolvedTheme === "light" ? logoOrtodont : logoOrtodont;
+	
 
 	return (
 		<>
-			 {/*<Image className={className} src={logo} alt="logo" />*/}
+			<Image className={className} src={logo} alt="logo"  width={400}
+				  height={720}
+				  sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+				  
+				  
+				  
+				  />
 		</>
 	);
 };

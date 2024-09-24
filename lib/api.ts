@@ -1,9 +1,14 @@
 const POST_GRAPHQL_FIELDS = `
+metatitle
+metadescription
 h1
 leftimg{
     url
   }
 rightimg{
+    url
+  }
+    logo{
     url
   }
  tags { 
