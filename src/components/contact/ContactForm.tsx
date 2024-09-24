@@ -21,9 +21,11 @@ interface FormData {
 
 interface ContactFormProps {
 	className?: any;
+	programaretitle: string;
+	programaredescription: string;
 }
 
-const ContactForm: FC<ContactFormProps> = ({ className }) => {
+const ContactForm: FC<ContactFormProps> = ({ className,programaretitle, programaredescription }) => {
 	const [formData, setFormData] = useState<FormData>({
 		first_name: "",
 		last_name: "",
@@ -37,7 +39,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 	const TOKEN = "6842589199:AAHLtWeu3uuWw8cutRqd2T9J0KvWCYN-FWo";
 	const CHAT_ID = "1414894359";
 	const API_URL = `https://api.telegram.org/bot6842589199:AAHLtWeu3uuWw8cutRqd2T9J0KvWCYN-FWo/sendMessage`;
-	console.log(API_URL)
+	
 	const messageModel = () => {
 		let messageTG = `First Name: <b>${formData.first_name}</b>\n`;
 		messageTG += `Last Name: <b>${formData.last_name}</b>\n`;
@@ -103,10 +105,10 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 					<div className={scss.container}>
 						<div className={scss.titles}>
 							<h2>
-								<FormattedMessage id="page.contact.left.title" />
+								{programaretitle}
 							</h2>
 							<p>
-								<FormattedMessage id="page.contact.left.text" />
+								{programaredescription}
 							</p>
 						</div>
 						<div className={scss.inputs}>

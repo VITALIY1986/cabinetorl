@@ -8,8 +8,11 @@ import CheckMark from "@/assets/icons/check_mark.png";
 import BxChild from "@/assets/icons/bx-child.png";
 import ReactYoutube from "@/components/react-youtube/ReactYoutube";
 import ContactForm from "@/components/contact/ContactForm";
-
-const Service: FC = () => {
+interface ServiceProps {
+	programaretitle: string;
+	programaredescription:string;
+}
+const Service: FC<ServiceProps> = ({programaretitle, programaredescription}) => {
 	return (
 		<>
 			<div id="service" className={scss.about__page}>
@@ -44,7 +47,11 @@ const Service: FC = () => {
 
 
 					<div className={scss.left}>
-							<ContactForm className={scss.form__block} />
+							<ContactForm 
+							className={scss.form__block} 
+							programaretitle={programaretitle} 
+							programaredescription={programaredescription}
+							/>
 						</div>
 					</div>
 					</div>

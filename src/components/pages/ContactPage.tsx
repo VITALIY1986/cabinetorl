@@ -70,6 +70,7 @@ const ContactPage: FC = () => {
                     title="Map on 2GIS"
                     width="100%"
                     height="400px"
+					
                   ></iframe>
                 ) : (
                   <p>Карта загружается...</p>

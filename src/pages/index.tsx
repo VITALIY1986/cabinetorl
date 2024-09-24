@@ -11,15 +11,15 @@ const Service = dynamic(() => import('@/components/pages/Service'), { ssr: false
 const ContactPage = dynamic(() => import('@/components/pages/ContactPage'));
 
 interface Post {
+  programaredescription: string;
+programaretitle: string;
 	metadescription: string;
 	metatitle: string;
 	logo: {
-
-		url: string;
+    url: string;
 	};
 	rightimg: {
-
-		url: string;
+    url: string;
 	};
 	h1: string;
   videoId: string;
@@ -66,10 +66,16 @@ const Index: FC<Props> = ({ posts }) => {
 			<Layout metatitle={post.metatitle} metadescription={post.metadescription} logo={post.logo.url}>
           <React.Fragment key={post.slug}>
             <HomePage url={post.coverImage.url} text={post.h1}/>
-            <Service />
-			
-            <AboutPage videoId={post.videoId} youtubedescription={post.youtubedescription} rightimg={post.rightimg.url}/>
-            <ContactPage />
+            <Service  
+            programaretitle={post.programaretitle} 
+            programaredescription={post.programaredescription}
+            />
+			     <AboutPage 
+            videoId={post.videoId} 
+            youtubedescription={post.youtubedescription} 
+            rightimg={post.rightimg.url}
+            />
+            <ContactPage/>
           </React.Fragment>
 		  </Layout>
         ))
