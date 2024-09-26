@@ -222,11 +222,9 @@
 					align-items: center;
 
 					.yearset {
-						max-width: 70px;
+					 max-width: 140px;
 color: #ffffff;
-						@media (max-width: 560px) {
-							max-width: 63px;
-						}
+						
 					}
 				}
 			}
@@ -324,9 +322,10 @@ color: #ffffff;
 			align-items: center;
 
 			.balance__for__mobile {
-				position: absolute;
-				width: 1px;
-				height: 1px;
+				position: relative; /* или absolute, если вам нужно позиционирование */
+				width: 100%; /* Адаптируется к ширине родительского контейнера */
+				height: auto; /* Автоматически подстраивает высоту, сохраняя соотношение сторон */
+				object-fit: cover; /* Или contain, если вы хотите, чтобы все изображение умещалось */
 			}
 
 			.icon__first {
