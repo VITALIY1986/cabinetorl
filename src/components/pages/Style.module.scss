@@ -326,12 +326,7 @@ color: #ffffff;
 				width: 1px;
 				height: 1px;
 			}
-			.balance__for__mobiles {
-				position: relative; /* или absolute, если вам нужно позиционирование */
-				width: 100%; /* Адаптируется к ширине родительского контейнера */
-				height: auto; /* Автоматически подстраивает высоту, сохраняя соотношение сторон */
-				object-fit: cover; /* Или contain, если вы хотите, чтобы все изображение умещалось */
-			}
+
 			.icon__first {
 				position: absolute;
 				left: -200px;
