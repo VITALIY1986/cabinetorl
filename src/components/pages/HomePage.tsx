@@ -87,12 +87,14 @@ const HomePage: FC<HomePageProps> = ({ url,text }) => {
             {/* ! right */}
             <div className={scss.right}>
               <div className={scss.woman}>
-                
+           {/*    width={520}
+              height={900}  ЧТОБ УВЕЛИЧИТЬ СКОРОСТЬ     */}
 				<Image
 				
               priority={true}
               width={460}
-              height={800}
+              height={780}
+            
 			  sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
 			  
 			 
