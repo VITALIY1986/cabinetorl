@@ -41,9 +41,9 @@ const HomePage: FC<HomePageProps> = ({ url,text }) => {
             <div className={scss.left}>
               <div className={scss.sub__title}>
 				
-                <h2 className={scss.title}>
+                <h1 className={scss.title}>
 				{text}
-                </h2>
+                </h1>
               {/*   <div className={scss.button__call}>
                   <div className={scss.icons}>
                     <a className={`${scss.link} ${scss.instagram}`} href="#" target="_blank" aria-label="Link to Instagram profile">
@@ -61,18 +61,18 @@ const HomePage: FC<HomePageProps> = ({ url,text }) => {
 
               <div className={scss.stats}>
                 <div className={scss.customers}>
-                  <h2>
+                  <h1>
                     <AnimatedNumbers value={1687} />+
-                  </h2>
+                  </h1>
                   <hr />
                   <p>
                     <FormattedMessage id="page.home.stat.first" />
                   </p>
                 </div>
                 <div className={scss.years}>
-                  <h2>
+                  <h1>
                     <AnimatedNumbers value={20} />+
-                  </h2>
+                  </h1>
                   <hr />
                   <p>
                     <FormattedMessage id="page.home.stat.second" />
