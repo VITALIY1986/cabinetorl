@@ -200,10 +200,11 @@
 				}
 
 				.customers {
-					display: flex;
+				
 					align-items: center;
 
-					h1 {
+					.yearset {
+						color: #ffffff;
 						min-width: 150px;
 
 						@media (max-width: 560px) {
@@ -217,12 +218,12 @@
 				}
 
 				.years {
-					display: flex;
+					
 					align-items: center;
 
-					p {
+					.yearset {
 						max-width: 70px;
-
+color: #ffffff;
 						@media (max-width: 560px) {
 							max-width: 63px;
 						}

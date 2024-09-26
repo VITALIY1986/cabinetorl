@@ -60,8 +60,26 @@ const HomePage: FC<HomePageProps> = ({ url,text }) => {
               </div>
 
               <div className={scss.stats}>
-              
-              
+                <div className={scss.customers}>
+                
+                 
+                  <div className={scss.yearset}>
+                  clienți mulțumiți
+                  </div>
+                  <h1>
+                    <AnimatedNumbers value={1687} />+
+                  </h1>
+                </div>
+                <div className={scss.years}>
+                <div className={scss.yearset}>
+                   ani de practica
+                    </div>
+                  <h1>
+                    <AnimatedNumbers value={20} />+
+                  </h1>
+                 
+                 
+                </div>
               </div>
             </div>
 
@@ -72,8 +90,8 @@ const HomePage: FC<HomePageProps> = ({ url,text }) => {
 				<Image
 				
               priority={true}
-			  width={600}
-			  height={900}
+              width={600}
+              height={900}
 			  sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
 			  
 			 
