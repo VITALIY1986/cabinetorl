@@ -53,9 +53,9 @@ const AboutPage: FC<AboutPageProps> = ({ videoId,youtubedescription,rightimg }) 
                 />
               </div>
               {/* Заголовок */}
-              <h1 className={scss.title}>
+              <h2 className={scss.title}>
                 <FormattedMessage id="page.about.title" />
-              </h1>
+              </h2>
               {/* Видео и текст */}
               <div className={scss.video__text}>
                 <ReactYoutube videoId={videoId} className={scss.youtube} />

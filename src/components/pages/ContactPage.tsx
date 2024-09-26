@@ -44,9 +44,9 @@ const ContactPage: FC = () => {
             <div className={scss.right}>
               <div className={scss.block}>
                 <div className={scss.texts}>
-                  <h1 className={scss.title}>
+                  <h3 className={scss.title}>
                     <FormattedMessage id="page.contact.right.title" />
-                  </h1>
+                  </h3>
                   <p className={scss.text}>
                     <a className={scss.tel} href="tel:+40724955956">
                       <PhoneIcon />

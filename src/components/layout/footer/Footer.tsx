@@ -40,9 +40,9 @@ const Footer: FC<FooterProps> = (props) => {
 							</p>
 						</div>
 						<div className={scss.block}>
-							<h6>
+							<h4>
 								<FormattedMessage id="page.footer.block_2.title" />
-							</h6>
+							</h4>
 							<a className={scss.link__text} href="#">
 								<FormattedMessage id="page.footer.block_2.text_1" />
 							</a>
@@ -57,18 +57,18 @@ const Footer: FC<FooterProps> = (props) => {
 							</a>
 						</div>
 						<div className={scss.block}>
-							<h6>
+							<h4>
 								<FormattedMessage id="page.footer.block_3.title" />
-							</h6>
+							</h4>
 							<a className={scss.link__text} href="#service">
 								<FormattedMessage id="page.footer.block_3.text_1" />
 							</a>
 						
 						</div>
 						<div className={scss.block}>
-							<h6>
+							<h4>
 								<FormattedMessage id="page.footer.block_4.title" />
-							</h6>
+							</h4>
 							{/*<a className={scss.link__text} href="#">*/}
 							{/*	boss.armsport@gmail.com*/}
 							{/*</a>*/}

@@ -53,7 +53,8 @@ const Layout: FC<LayoutProps> = ({ children, dir, metatitle, metadescription, lo
 				<title>{metatitle}</title>
 				<meta name="description" content={metadescription} />
 
-				<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
 				<meta name="robots" content="index, follow"/>
 				<link rel="icon" href="/icon.png" />
 				<link rel="canonical" href="https://cabinet-orl-iasi.ro/" />
