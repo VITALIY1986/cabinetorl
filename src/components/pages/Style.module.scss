@@ -174,8 +174,7 @@
 
 					color: var(--header-timetable);
 
-					
-					
+				
 				}
 
 				hr {
@@ -183,10 +182,7 @@
 					width: 50px;
 					transform: rotate(90deg);
 
-					@media (max-width: 560px) {
-						border: 1px solid #ffd699;
-						width: 30px;
-					}
+					
 				}
 
 				p {
