@@ -28,7 +28,7 @@ const ReactYoutube: FC<YoutubeProps> = ({ className, videoId }) => {
 			<div className={styles.overlay}></div> {/* Затемнение */}
 			<img
 			  src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
-			  alt="YouTube Preview"
+			  alt="Doctorul Luminița Rădulescu discută despre unul dintre simțurile de bază ale omului la BZI LIVE"
 			  className={styles.previewImage}
 			/>
 			<div className={styles.playButton}>

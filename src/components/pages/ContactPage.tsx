@@ -6,7 +6,7 @@ import { EmailIcon, MarkerIcon, PhoneIcon } from "@/components/svgs";
 import logo from "@/assets/ortodont.webp";
 import AnimatedNumbers from "@/components/framer-motion/AnimatedNumbers";
 import { FormattedMessage } from "react-intl";
-
+import Link from "next/link";
 const ContactPage: FC = () => {
   const [isMapLoaded, setIsMapLoaded] = useState(false); // Состояние для карты
   const mapRef = useRef<HTMLDivElement | null>(null); // Реф для карты
@@ -55,7 +55,9 @@ const ContactPage: FC = () => {
                   </p>
                   <p className={scss.text}>
                     <MarkerIcon />
-                    Cabinet ORL Prof. dr. Radulescu Luminita
+                    "Cabinet ORL Iași - Prof. dr. Luminița Rădulescu, locația: <Link href="https://www.google.com/maps/place/Șoseaua+Moara+de+Foc+Nr.+30,+Iași">
+          Șoseaua Moara de Foc Nr. 30.
+        </Link>
                   </p>
                 </div>
                 <div className={scss.logo}>

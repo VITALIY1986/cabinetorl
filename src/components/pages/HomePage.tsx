@@ -95,7 +95,7 @@ const HomePage: FC<HomePageProps> = ({ url,text }) => {
 			 
               className={scss.balance__for__mobile}
               src={url}
-              alt={"Cabinet ORL"}
+              alt={"Profesor Doctor Radulescu Luminita - Specialist Otorinolaringolog (ORL)"}
             />
               </div>
             </div>
