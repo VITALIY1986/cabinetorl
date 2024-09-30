@@ -36,7 +36,7 @@ const Footer: FC<FooterProps> = (props) => {
 								</div>
 							</Link>
 							<p>
-								<FormattedMessage id="page.footer.block_1.title" />
+							Servicii principale: otomicroscopie, otoscopie, rinoscopie, fibroscopie, timpanogramă, DPOAE.
 							</p>
 						</div>
 						<div className={scss.block}>
@@ -80,7 +80,7 @@ const Footer: FC<FooterProps> = (props) => {
 					</div>
 					<hr />
 					<div className={scss.footer__bottom}>
-						<div className={scss.copyright}>© 2019-2024 Cabinet ORL / Toate drepturile rezervate.</div>
+						<div className={scss.copyright}>© 2019-2024 / Toate drepturile rezervate.</div>
 						<div className={scss.icons}>
 							<a
 								className={scss.link}

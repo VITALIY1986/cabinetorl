@@ -55,7 +55,7 @@ const ContactPage: FC = () => {
                   </p>
                   <p className={scss.text}>
                     <MarkerIcon />
-                    "Cabinet ORL Iași - Prof. dr. Luminița Rădulescu, locația: <Link href="https://www.google.com/maps/place/Șoseaua+Moara+de+Foc+Nr.+30,+Iași">
+                    Cabinet specializat ORL Iași – Prof. Dr. Luminița Rădulescu, Adresă: <Link href="https://www.google.com/maps/place/Șoseaua+Moara+de+Foc+Nr.+30,+Iași">
           Șoseaua Moara de Foc Nr. 30.
         </Link>
                   </p>
