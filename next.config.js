@@ -32,7 +32,7 @@ const nextConfig = {
 			has: [
 			  {
 				type: 'host',
-				value: 'stately-lr.netlify.app/',
+				value: 'stately-lr.netlify.app',
 			  },
 			],
 			destination: 'https://cabinet-orl-iasi.ro/:path*',
