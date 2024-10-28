@@ -32,7 +32,7 @@ const nextConfig = {
 			has: [
 			  {
 				type: 'host',
-				value: 'storied-stroopwafel-c62b1b.netlify.app',
+				value: 'stately-lr.netlify.app/',
 			  },
 			],
 			destination: 'https://cabinet-orl-iasi.ro/:path*',
