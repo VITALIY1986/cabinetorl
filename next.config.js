@@ -25,7 +25,21 @@ const nextConfig = {
 		defaultLocale: "ro", // назначаем его как основной
 		localeDetection: false // при необходимости
 	},
-
+	async redirects() {
+		return [
+		  {
+			source: '/:path*',
+			has: [
+			  {
+				type: 'host',
+				value: 'storied-stroopwafel-c62b1b.netlify.app',
+			  },
+			],
+			destination: 'https://cabinet-orl-iasi.ro/:path*',
+			permanent: true,
+		  },
+		];
+	  },
 	webpack(config) {
 		config.module.rules.push({
 			test: /\.svg$/,
