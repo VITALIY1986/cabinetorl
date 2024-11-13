@@ -205,17 +205,18 @@ const ContactForm: FC<ContactFormProps> = ({ className,programaretitle, programa
 							</div>
 
 							<div className={scss.textareaBx}>
-								<textarea
-									name="message"
-									aria-labelledby="message"
-									id="message"
-									className={`resize-none ${scss.message} ${font.className} w-full h-32 p-3 text-base leading-6 overflow-hidden`}
-									placeholder={intl.formatMessage({
-										id: "page.contact.input.message"
-									})}
-									value={formData.message}
-									onChange={handleChange}
-								/>
+							<textarea
+    name="message"
+    aria-labelledby="message"
+    id="message"
+    className={`${scss.message} ${font.className} w-full h-32 p-3 text-base leading-6 overflow-hidden`}
+    style={{ resize: 'none' }}
+    placeholder={intl.formatMessage({
+        id: "page.contact.input.message"
+    })}
+    value={formData.message}
+    onChange={handleChange}
+/>
 							</div>
 						</div>
 						<button
