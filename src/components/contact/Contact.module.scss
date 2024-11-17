@@ -125,7 +125,7 @@
 			.message {
 				margin-bottom: 15px;
 				padding: 15px 10px;
-				max-width: 100%;
+			
 				min-height: 150px;
 				min-width: 100%;
 
@@ -140,12 +140,7 @@
 				&::placeholder {
 					color: #ffffff;
 				}
-				&:focus ~ label,
-				&:valid ~ label {
-					transform: translateY(-7.5px);
-					font-size: 0.8em;
-					color: #fff;
-				}
+			
 				
 			}
 		}
