@@ -7,9 +7,9 @@ import { useIntl } from "react-intl";
 import logo from "@/assets/ortodont.webp";
 import woman from "@/assets/img/Prof-Dr-LuminitaRadulescu.png";
 // Inter
-import { Montserrat } from "next/font/google";
+{/*import { Montserrat } from "next/font/google";*/}
 
-const font = Montserrat({ subsets: ["latin"] });
+{/*const font = Montserrat({ subsets: ["latin"] });*/}
 
 interface LayoutProps {
 	logo: string;
@@ -81,11 +81,12 @@ const Layout: FC<LayoutProps> = ({ children, dir, metatitle, metadescription, lo
 				
 				{/*<link rel="icon" href="/icon.png" hrefLang="x-default" />
 				<link rel="icon" href="/icon.png" hrefLang="ru" />
-				<link rel="icon" href="/icon.png" hrefLang="en" />
-	<link rel="icon" href="/icon.png" hrefLang="kg" />*/}
+				<link rel="icon" href="/icon.png" hrefLang="en" />*/}
+				{/*${font.className}*/}
+	<link rel="icon" href="/icon.png" hrefLang="kg" />
 			</Head>
 			<div dir={dir}>
-				<div className={`${scss.layout} ${font.className}`}>
+				<div className={`${scss.layout} `}>
 					<header>
 						<Header {...props}logo={logo} />
 					</header>
