@@ -205,7 +205,7 @@ const ContactForm: FC<ContactFormProps> = ({ className,programaretitle, programa
 							</div>
 
 							<div className={scss.textareaBx}>
-							<textarea
+							<input
     name="message"
     aria-labelledby="message"
     id="message"
