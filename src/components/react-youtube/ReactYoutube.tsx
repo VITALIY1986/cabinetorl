@@ -1,7 +1,7 @@
 import React, { FC, useState } from "react";
 import YouTube, { YouTubeProps } from "react-youtube";
 import styles from "./ReactYoutube.module.scss"; // Импорт CSS или SCSS файла
-
+import Image from "next/image";
 interface YoutubeProps {
 	className: string;
 	videoId: string;
@@ -26,10 +26,12 @@ const ReactYoutube: FC<YoutubeProps> = ({ className, videoId }) => {
 		{!isLoaded ? (
 		  <>
 			<div className={styles.overlay}></div> {/* Затемнение */}
-			<img
+			<Image
 			  src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
 			  alt="Doctorul Luminița Rădulescu discută despre unul dintre simțurile de bază ale omului la BZI LIVE"
-			  className={styles.previewImage}
+			 width={600}
+			 height={400}
+			  loading="lazy"
 			/>
 			<div className={styles.playButton}>
 			  &#9658;
