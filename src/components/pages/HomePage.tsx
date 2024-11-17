@@ -95,18 +95,11 @@ const HomePage: FC<HomePageProps> = ({ url,text }) => {
               width={400}
               height={600}
             
-		
+			  sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+			  
+			 
+        
               src={url}
-            sizes="(max-width: 600px) 100vw, (max-width: 900px) 400px, 400px"
-           
-        
-       
-        
-        
-       
-          loading="eager"
-              className={scss.balance__for__mobile}
-             
               alt={"Profesor Doctor Radulescu Luminita - Specialist Otorinolaringolog (ORL)"}
             />
               </div>

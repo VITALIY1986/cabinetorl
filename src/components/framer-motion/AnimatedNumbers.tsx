@@ -29,7 +29,7 @@ const AnimatedNumbers: FC<AnimatedNumbersProps> = ({ value }) => {
 
   return (
     <>
-   {/*   <span ref={ref} className={scss.numberContainer}></span>*/}
+      <span ref={ref} className={scss.numberContainer}></span>
     </>
   );
 };
