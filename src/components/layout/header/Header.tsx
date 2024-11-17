@@ -127,7 +127,7 @@ const Header: FC<HeaderProps> = ({ logo, ...props }) => {
 									}}
 								>
 									<div className={scss.logo__bg}>
-									{/*	<SwitchLogo className={scss.logo__img} logo={logo} />*/}
+										<SwitchLogo className={scss.logo__img} logo={logo} />
 									</div>
 								</ScrollLink>
 							</div>
