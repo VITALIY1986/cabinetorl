@@ -92,8 +92,8 @@ const HomePage: FC<HomePageProps> = ({ url,text }) => {
 				<Image
 				
               priority={true}
-              width={460}
-              height={780}
+              width={390}
+              height={600}
             
 			  sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
 			  
