@@ -124,17 +124,19 @@
 			.textareaBx{
 				position: relative;
 				.message {
-					position: relative;
-					width: 100%;
-					background:#336061;
-					border: none;
-					outline: none;
-					padding: 25px 10px 7.5px 10px;
-					border-radius: 4px;
-					border: 1px solid transparent;
-					color: #ffffff;
-					font-weight: 500;
-					font-size: 1em;
+				margin-bottom: 15px;
+				
+			
+				min-height: 150px;
+				min-width: 100%;
+				padding: 35px 10px 7.5px 10px;
+				background: #336061;
+				border: none;
+				outline: none;
+				border-radius: 4px;
+				color:#ffffff;
+				font-size: 0.9rem;
+				font-weight: 400;
 			
 				&::placeholder {
 					color: #ffffff;
