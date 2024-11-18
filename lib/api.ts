@@ -1,6 +1,6 @@
 const POST_GRAPHQL_FIELDS = `
 
-serviciiCollection(limit: 5) {
+serviciiCollection(limit: 6) {
   items {
     serviciidescription
     serviciititle
