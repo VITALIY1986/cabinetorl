@@ -121,11 +121,12 @@
 					color: #ff1212;
 				}
 			}
-
-			.message {
+			.textareaBx{
+				position: relative;
+				.message {
 				margin-bottom: 15px;
 				
-			position: relative;
+			
 				min-height: 150px;
 				min-width: 100%;
 				padding: 35px 10px 7.5px 10px;
@@ -143,10 +144,10 @@
 			
 				
 			}
-			label {
+				label {
 				font-size: 0.8em;
 				position: absolute;
-				left: 22px;
+				left: 0px;
 				padding: 15px 10px;
 				font-style: normal;
 				color: #ffffff;
@@ -154,7 +155,7 @@
 				pointer-events: none;
 			}
 		}
-
+	}
 		.button {
 			width: 100%;
 			padding: 19px;
