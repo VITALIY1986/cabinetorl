@@ -69,7 +69,7 @@ const Index: FC<Props> = ({ posts }) => {
 
   // Пример фильтрации постов по тегу "homepage"
   const filteredPosts = filterPostsByTag(posts, "homepage");
-console.log(filteredPosts)
+
   return (
     <>
       {filteredPosts.length > 0 ? (

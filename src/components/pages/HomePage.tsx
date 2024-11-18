@@ -64,18 +64,18 @@ const HomePage: FC<HomePageProps> = ({ url,text }) => {
                 
                  
                   
-                  <h1>
+                  <h2>
                     <AnimatedNumbers value={1687} />+
-                  </h1>
+                  </h2>
                   <div className={scss.yearset}>
                   clienți mulțumiți
                   </div>
                 </div>
                 <div className={scss.years}>
                
-                  <h1>
+                  <h2>
                     <AnimatedNumbers value={20} />+
-                  </h1>
+                  </h2>
                  
                   <div className={scss.yearset}>
                    ani de practica

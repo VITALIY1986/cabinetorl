@@ -209,7 +209,7 @@ const ContactForm: FC<ContactFormProps> = ({ className,programaretitle, programa
     name="message"
     aria-labelledby="message"
     id="message"
-    className={`${scss.message} ${font.className} `}
+	className={scss.input__field}
    
     placeholder={intl.formatMessage({
         id: "page.contact.input.message"

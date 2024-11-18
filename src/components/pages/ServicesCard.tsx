@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import Image from "next/image";
 import scss from "./Style.module.scss"; // Подключаем стили из CSS-модуля
-
+import { FormattedMessage, useIntl } from "react-intl";
 interface ServiceProps {
   post: {
     serviciiCollection: {
@@ -18,6 +18,10 @@ interface ServiceProps {
 
 const ServicesCard: FC<ServiceProps> = ({ post }) => {
   return (
+    <div className="container">
+      <h2 className={scss.titleservices}>
+      ORL: Servicii de diagnostic și tratament pentru afecțiuni ale auzului și căilor respiratorii 
+                  </h2>
     <div className={scss.serviceswrapper}>
       {post.serviciiCollection.items.map((item, index) => (
         <div
@@ -46,7 +50,7 @@ const ServicesCard: FC<ServiceProps> = ({ post }) => {
           </div>
         </div>
       ))}
-    </div>
+    </div></div>
   );
 };
 
