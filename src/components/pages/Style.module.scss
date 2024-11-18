@@ -26,18 +26,18 @@ color: rgb(33, 33, 33);
 	gap: 0px; // Adds spacing between the cards
   
 	.card {
-	  margin: 20px;
+	  margin: 10px;
 	  border-radius: 10px;
 	  overflow: hidden;
 	  display: flex;
 	  align-items: center;
 	  flex-direction: column;
 	  background-color: #336061;
-	  width: calc(33.33% - 40px); // By default, 3 cards per row on desktop
+	  width: calc(33.33% - 20px); // By default, 3 cards per row on desktop
   
 	  // Mobile view: 1 card per row
 	  @media (max-width: 768px) {
-		width: calc(100% - 40px); // Full width for each card on mobile
+		width: calc(100% - 20px); // Full width for each card on mobile
 	  }
 	}
   
