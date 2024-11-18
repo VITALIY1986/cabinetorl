@@ -3,6 +3,39 @@
 
 
 // ! HomePage
+
+.serviceswrapper{
+	display: flex;
+           .card{
+			margin: 20px;
+			border-radius: 10px;
+	overflow: hidden;
+	        display: flex;
+	           align-items: center;
+			   flex-direction: column;
+			   background-color: #336061;
+          }
+		  .imagewrapper{
+			width: 100%;
+			.imageinner{
+				height: 300px;
+				object-fit: cover;
+				width: 100%;
+			}
+		  }
+		  .textblock{
+			
+			padding: 20px;
+			   h3{
+				color: #ffffff;
+				
+			   }
+			   p{
+			margin-top: 10px;
+			color: #dddddd;
+			   }
+		  }
+         }
 .home__page {
 	
     background: #336061;

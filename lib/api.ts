@@ -1,10 +1,18 @@
 const POST_GRAPHQL_FIELDS = `
 
-
+serviciiCollection(limit: 5) {
+  items {
+    serviciidescription
+    serviciititle
+    serviciimedia{
+    url}
+  }
+}
 programaredescription
 programaretitle
 metatitle
 metadescription
+
 h1
 leftimg{
     url
