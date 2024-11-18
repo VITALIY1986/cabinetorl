@@ -206,17 +206,18 @@ const ContactForm: FC<ContactFormProps> = ({ className,programaretitle, programa
 
 							<div className={scss.textareaBx}>
 							<textarea
-    name="message"
-    aria-labelledby="message"
-    id="message"
-	className={scss.input__field}
+    						name="message"
+    						aria-labelledby="message"
+    						id="message"
+    						className={`${scss.message} ${font.className} `}
    
-    placeholder={intl.formatMessage({
-        id: "page.contact.input.message"
-    })}
-    value={formData.message}
-    onChange={handleChange}
-/>
+    					
+    						value={formData.message}
+    						onChange={handleChange}
+							/>
+							<label htmlFor="message">
+									<FormattedMessage id="page.contact.input.message" />
+								</label>
 							</div>
 						</div>
 						<button
@@ -238,3 +239,8 @@ const ContactForm: FC<ContactFormProps> = ({ className,programaretitle, programa
 };
 
 export default ContactForm;
+
+
+{/*placeholder={intl.formatMessage({
+	id: "page.contact.input.message"
+	})}*/}
