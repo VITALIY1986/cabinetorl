@@ -20,7 +20,7 @@ const ServicesCard: FC<ServiceProps> = ({ post }) => {
   return (
     <div className="container">
       <h2 className={scss.titleservices}>
-      Serviciile ORL din Iasi oferite de Prof. Dr. Luminita Radulescu includ:
+      Serviciile ORL din Iasi includ:
                   </h2>
     <div className={scss.serviceswrapper}>
       {post.serviciiCollection.items.map((item, index) => (
