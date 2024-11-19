@@ -20,7 +20,7 @@ const ServicesCard: FC<ServiceProps> = ({ post }) => {
   return (
     <div className="container">
       <h2 className={scss.titleservices}>
-      Mai mult despre Servicii ORL in Iasi de diagnostic si tratament pentru afectiuni ale auzului si cailor respiratorii
+      Serviciile ORL din Iasi oferite de Prof. Dr. Luminita Radulescu includ:
                   </h2>
     <div className={scss.serviceswrapper}>
       {post.serviciiCollection.items.map((item, index) => (
