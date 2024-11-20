@@ -10,27 +10,7 @@ import woman from "@/assets/img/Prof-Dr-LuminitaRadulescu.png";
 import { Montserrat } from "next/font/google";
 
 const font = Montserrat({ subsets: ["latin"] });
-export const metadata = {
-	title: "Cabinet ORL Iasi: Profesor Doctor Radulescu Luminita - Specialist Otorinolaringolog",
-	description: "Cabinet ORL Iasi - Profesor Doctor Radulescu Luminita ofera servicii complete ORL, de la diagnostic la tratament, inclusiv consultatii si urgente ORL in Iasi.",
-	generator: "Next.js",
-	manifest: "/manifest.json",
-	keywords: ["nextjs", "nextjs14", "next14", "pwa", "next-pwa"],
-	themeColor: [{ media: "(prefers-color-scheme: dark)", color: "#fff" }],
-	authors: [
-	  { name: "Cabinet ORL Iasi" },
-	  {
-		name: "Cabinet ORL Iasi",
-		url: "#",
-	  },
-	],
-	viewport:
-	  "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover",
-	icons: [
-	  { rel: "apple-touch-icon", url: "icons/icon-128x128.png" },
-	  { rel: "icon", url: "icons/icon-128x128.png" },
-	],
-  };
+
 interface LayoutProps {
 	logo: string;
 	metadescription: string;
@@ -95,16 +75,7 @@ const Layout: FC<LayoutProps> = ({ children, dir, metatitle, metadescription, lo
 <meta name="twitter:image" content={`https://cabinet-orl-iasi.ro${logo}`} />
 <meta name="twitter:image:alt" content={metatitle} />
 
-{metadata.themeColor.map(({ media, color }, index) => (
-          <meta key={index} name="theme-color" media={media} content={color} />
-        ))}
-        {metadata.authors.map(({ name, url }, index) => (
-          <meta key={index} name="author" content={name} {...(url && { href: url })} />
-        ))}
-        <meta name="viewport" content={metadata.viewport} />
-        {metadata.icons.map(({ rel, url }, index) => (
-          <link key={index} rel={rel} href={url} />
-        ))}
+
 
 
 				
