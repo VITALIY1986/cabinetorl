@@ -1,58 +1,52 @@
 /** @type {import("next").NextConfig} */
-const withPWA = require("next-pwa")({
-	dest: "public",
-	disable: process.env.NODE_ENV === "development",
-	register: true,
-	skipWaiting: true,
-  });
 const nextConfig = {
 	reactStrictMode: true,
 	swcMinify: true,
-	reactStrictMode: true,
 	images: {
-		remotePatterns: [
-			{
-				protocol: 'https',
-				hostname: 'images.ctfassets.net',
-				port: '', // оставьте пустым, если не требуется
-				pathname: '/**', // разрешаем все пути
-			},
-			{
-				protocol: 'https',
-				hostname: 'img.youtube.com',
-				port: '', // оставьте пустым
-				pathname: '/**', // разрешаем все пути
-			},
-		],
+	  remotePatterns: [
+		{
+		  protocol: 'https',
+		  hostname: 'images.ctfassets.net',
+		  port: '',
+		  pathname: '/**',
+		},
+		{
+		  protocol: 'https',
+		  hostname: 'img.youtube.com',
+		  port: '',
+		  pathname: '/**',
+		},
+	  ],
 	},
 	i18n: {
-		locales: ["ro"], // оставляем только один язык
-		defaultLocale: "ro", // назначаем его как основной
-		localeDetection: false, // при необходимости
+	  locales: ['ro'],
+	  defaultLocale: 'ro',
+	  localeDetection: false,
 	},
 	async redirects() {
-		return [
+	  return [
+		{
+		  source: '/:path*',
+		  has: [
 			{
-				source: '/:path*',
-				has: [
-					{
-						type: 'host',
-						value: 'stately-lr.netlify.app',
-					},
-				],
-				destination: 'https://cabinet-orl-iasi.ro/:path*',
-				permanent: true,
+			  type: 'host',
+			  value: 'stately-lr.netlify.app',
 			},
-		];
+		  ],
+		  destination: 'https://cabinet-orl-iasi.ro/:path*',
+		  permanent: true,
+		},
+	  ];
 	},
 	webpack(config) {
-		config.module.rules.push({
-			test: /\.svg$/,
-			use: [{ loader: "@svgr/webpack", options: { icon: true } }],
-		});
-
-		return config;
+	  config.module.rules.push({
+		test: /\.svg$/,
+		use: [{ loader: '@svgr/webpack', options: { icon: true } }],
+	  });
+  
+	  return config;
 	},
-};
-
-module.exports = withPWA(nextConfig);
+  };
+  
+  module.exports = nextConfig;
+  
