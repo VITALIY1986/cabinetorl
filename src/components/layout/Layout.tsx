@@ -83,7 +83,7 @@ const Layout: FC<LayoutProps> = ({ children, dir, metatitle, metadescription, lo
         <meta name="dcterms.identifier" content="https://cabinet-orl-iasi.ro/" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content={metatitle} />
-        <meta name="twitter:image" content={`https://cabinet-orl-iasi.ro${logo}`} />
+        <meta name="twitter:image" content={`${logo}`} />
         <meta name="twitter:image:alt" content={metatitle} />
         
         {metadata.themeColor.map(({ media, color }, index) => (
