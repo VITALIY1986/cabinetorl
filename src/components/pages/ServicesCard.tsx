@@ -20,7 +20,7 @@ const ServicesCard: FC<ServiceProps> = ({ post }) => {
   return (
     <div className="container">
       <h2 className={scss.titleservices}>
-      Serviciile ORL Iasi includ:
+      Servicii oferite la Cabinet ORL Iași
                   </h2>
     <div className={scss.serviceswrapper}>
       {post.serviciiCollection.items.map((item, index) => (
