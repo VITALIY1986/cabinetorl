@@ -17,29 +17,12 @@ const Service: FC<ServiceProps> = ({programaretitle, programaredescription}) => 
 		<>	<div className="container">
 			<div id="service" className={scss.about__page}>
 				<div className={scss.block__1}>
-				<div className={scss.title1}>
-						
-							<p>
-							Cautati un specialist <strong>ORL in Iasi? </strong>
-							Cabinetul nostru va ofera servicii de
-							 inalta calitate in domeniul otorinolaringologiei,
-							  sub indrumarea<strong> Prof. Dr. Luminita Radulescu, medic
-							  ORL </strong> cu peste 20 de ani de experienta. Cu utilizarea tehnologiilor
-							   avansate si a cunostintelor acumulate de-a lungul anilor in domeniul ORL,
-							    suntem aici pentru a va oferi cele mai bune solutii pentru sanatatea dumneavoastra.
-								<br/>
-								Programati-va acum pentru o consultatie completa si beneficiati de investigatii detaliate: otomicroscopie, timpanograma, fibroscopie si multe altele.
-							</p>
-						</div>
+			
 						<div className={scss.title1}>
 							<h2>
-							Despre Cabinet ORL Iași
+							Servicii ORL Iași
 							</h2>
-							<p>
-							Principalul cabinet ORL din Iasi, situat pe strada Moara de Foc, 30, are ca specializare principala sanatatea urechilor, nasului si gatului. Sub indrumarea profesorului doctor Luminita Radulescu, cabinetul ofera consultatii complexe si investigatii moderne atat pentru adulti, cat si pentru copii.
-<br/>
-Cu <strong> peste 1687 de pacienti multumiti </strong> si <strong>20 de ani de practica,</strong> cabinetul nostru se numara printre cele mai respectate centre ORL din Iasi.
-							</p>
+							
 						</div>
 				
 					
@@ -48,7 +31,7 @@ Cu <strong> peste 1687 de pacienti multumiti </strong> si <strong>20 de ani de p
 						
 						<div className={scss.price }>
 							<div className={scss.titles }>
-							<h2 >Consultație ORL completa</h2>
+							<h2 >Prof. Dr. Luminita Radulescu</h2>
 							<p>Consultatia cu investigatiile incluse </p>
 							<ul>
 							     <li>Otomicroscopie </li>

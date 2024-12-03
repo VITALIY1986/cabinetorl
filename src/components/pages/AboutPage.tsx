@@ -64,41 +64,8 @@ const AboutPage: FC<AboutPageProps> = ({ videoId,youtubedescription,rightimg }) 
                 </p>
                 
               </div>
-              <div>
-              <h2 className={scss.title}>
-                Despre Prof. Dr. Luminița Rădulescu
-              </h2>
-              <p>
-              Prof. Dr. Luminita Radulescu este un medic ORL 
-              respectat, cu multiple publicatii si participari la
-               conferinte internationale. Cu o cariera de peste doua 
-               decenii, aceasta a ajutat mii de pacienti sa isi imbunatateasca 
-               calitatea vietii.</p>
-               </div>
-               <div>
-               <h2 className={scss.title}>
-               Intrebari frecvente despre consultatiile ORL la Iasi
-              </h2>
-              <h3><strong>Cand este indicata o consultatie ORL?</strong></h3>
-              <p>
-              Consultatia ORL este recomandata daca aveti simptome precum:</p>
-              <ul>
-                <li>Pierdere de auz.</li>
-                <li>Durere persistenta in ureche, gat sau nas.</li>
-                <li>Probleme de respiratie.</li>
-                <li>Sforait excesiv sau apnee in somn.</li>
-                <li>Pierderea sau schimbarea vocii.</li>
-                </ul>
-                <h3><strong>Ce investigatii sunt incluse in consultatie?</strong></h3>
-              <p>
-              Consultatia standard include:</p>
-              <ul>
-                <li>Otomicroscopie.</li>
-                <li>Examen clinic complet (urechi, nas, gat).</li>
-                <li>Fibroscopie si alte teste specifice, daca este necesar.</li>
-              
-                </ul>
-                </div>
+            
+               
             </div>
           </div>
         </div>
