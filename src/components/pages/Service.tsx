@@ -20,7 +20,7 @@ const Service: FC<ServiceProps> = ({programaretitle, programaredescription}) => 
 			
 						<div className={scss.title1}>
 							<h2>
-							Servicii ORL Iași
+							Consultatii ORL Iasi
 							</h2>
 							
 						</div>
